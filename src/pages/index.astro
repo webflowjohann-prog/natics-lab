@@ -1,0 +1,316 @@
+---
+import Layout from '../layouts/Layout.astro';
+const IMG = {
+  hero: 'https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920',
+  pt: 'https://images.ctfassets.net/drib7o8rcbyf/64oMt8msJ0h1l75i0ejdfs/51022d60a8ac8c3915436d1ede080321/CORE_ANCILLARIES_MODULE__PT_375x563-min.jpg?fm=webp&fit=fill&w=800',
+  spa: 'https://images.ctfassets.net/drib7o8rcbyf/1Z0EStzVUSZJUjkCqHMkol/9c9c7601c4fa6b4532fd2c77803dbe36/REGENERATION_MODULE__SPA_375x563-min.jpg?fm=webp&fit=fill&w=800',
+  iconic: 'https://images.ctfassets.net/drib7o8rcbyf/3nHzLEyA0EUbwptegIjvpR/d00dffbc475fe36f129523a6e672b1e6/REGENERATION_MODULE__ICONIC_SPACES_375x563-min.jpg?fm=webp&fit=fill&w=800',
+  gf: 'https://images.ctfassets.net/drib7o8rcbyf/7xaVBLqmztmYQGrXBg0pqx/01d2a0130ad7a05585663d9600b437eb/CORE_ANCILLARIES_MODULE__GF_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  pilates: 'https://images.ctfassets.net/drib7o8rcbyf/3SSkmL8U5YBGKCPkJoIdib/07d03a08278a1f3576dc52cdb2ed5e79/CORE_ANCILLARIES_MODULE__STUDIO_PILATES_375x563-min.jpg?fm=webp&fit=fill&w=600',
+  amenities: 'https://images.ctfassets.net/drib7o8rcbyf/3jxErqCGFfGDk4HdpTvBhH/40e1d98bddae5be182a0eb5c65e56d59/REGENERATION_MODULE__Amenities_375x563-min.jpg?fm=webp&fit=fill&w=600',
+};
+---
+<Layout>
+
+<section class="hero">
+  <div class="hero-bg" style={`background-image:url('${IMG.hero}')`}></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-label">Sur candidature uniquement</p>
+    <h1 class="hero-title">La ou les leaders deviennent <em>inarretables</em></h1>
+    <p class="hero-sub">Coaching d'elite, science preventive et experiences transformationnelles. Concu pour les dirigeants qui refusent les limites. Chaque adhesion inclut un pack bracelet et bague connectes au CRM No Limit Academy.</p>
+    <div class="hero-ctas">
+      <a href="/candidature" class="btn btn-primary btn-arrow">Devenir membre</a>
+      <a href="/concept" class="btn btn-outline">Decouvrir la vision</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Defiler</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">Les 3 piliers</p>
+    <h2 class="section-title">Un ecosysteme.<br><em>Un potentiel illimite.</em></h2>
+    <p class="section-desc">No Limit Academy est la premiere plateforme au monde qui reunit coaching d'elite, science preventive et experiences extremes dans un seul ecosysteme pour dirigeants.</p>
+  </div>
+  <div class="pillars reveal">
+    <div class="pillar">
+      <div class="pillar-img" style={`background-image:url('${IMG.pt}')`}></div>
+      <div class="pillar-content">
+        <p class="pillar-number">01</p>
+        <h3 class="pillar-title">Coaching d'elite</h3>
+        <p class="pillar-text">Des coachs tries sur le volet par un comite d'anciens athletes de haut niveau mondial. Aucun compromis sur l'excellence.</p>
+        <a href="/coachs" class="pillar-link">Decouvrir nos coachs</a>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-img" style={`background-image:url('${IMG.spa}')`}></div>
+      <div class="pillar-content">
+        <p class="pillar-number">02</p>
+        <h3 class="pillar-title">Science preventive</h3>
+        <p class="pillar-text">180+ biomarqueurs analyses. Suivi longitudinal. Recommandations personnalisees par des experts medicaux.</p>
+        <a href="/science" class="pillar-link">Explorer la science</a>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-img" style={`background-image:url('${IMG.iconic}')`}></div>
+      <div class="pillar-content">
+        <p class="pillar-number">03</p>
+        <h3 class="pillar-title">Experiences transformationnelles</h3>
+        <p class="pillar-text">Expeditions extremes, retraites exclusives et evenements sur invitation qui repoussent vos limites.</p>
+        <a href="/experiences" class="pillar-link">Voir les experiences</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="split reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.gf}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">La vision</p>
+    <h2 class="section-title">Forge par l'elite.<br>Pour ceux qui <em>dirigent.</em></h2>
+    <p class="section-desc">Fonde par Johann Langenberg, ancien numero 1 mondial et 5 fois champion d'Europe, et Dustin Arnold, ancien champion de boxe de haut niveau et fondateur de NATICS, studio prive de coaching a Bois-Guillaume dedie aux profils exigeants.</p>
+    <p class="section-desc">La methode de Dustin repose sur trois axes : IMPACT, FLOW, VISION, pour une progression durable alliant performance physique, equilibre et maitrise du corps. Johann y ajoute 25 ans de creation digitale, de production video et d'innovation IA.</p>
+    <a href="/coachs" class="btn btn-ghost btn-arrow">Decouvrir les fondateurs</a>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="stats reveal">
+    <div class="stat"><div class="stat-number">180+</div><div class="stat-label">Biomarqueurs suivis</div></div>
+    <div class="stat"><div class="stat-number">50</div><div class="stat-label">Membres par trimestre</div></div>
+    <div class="stat"><div class="stat-number">98%</div><div class="stat-label">Selectivite des candidatures</div></div>
+    <div class="stat"><div class="stat-number">24/7</div><div class="stat-label">Concierge bien-etre</div></div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">Niveaux d'adhesion</p>
+    <h2 class="section-title">Trois voies vers la <em>performance absolue</em></h2>
+    <p class="section-desc">Chaque niveau est un engagement envers votre meilleur vous. Choisissez l'intensite qui correspond a votre ambition.</p>
+  </div>
+  <div class="tiers reveal">
+    <div class="tier">
+      <h3 class="tier-name">Ascent</h3>
+      <p class="tier-price">A partir de 2 500 EUR / mois</p>
+      <p class="tier-desc">Les fondations. Un coaching d'elite regulier et un suivi sante pour construire votre socle de performance.</p>
+      <ul class="tier-features">
+        <li>3 seances hebdomadaires avec coach elite certifie</li>
+        <li>Pack connecte inclus (bracelet + bague connectes au CRM NLA)</li>
+        <li>Bilan Lucis semestriel (180+ biomarqueurs)</li>
+        <li>Plan personnalise nutrition, sommeil et recuperation</li>
+        <li>Tableau de bord performance avec suivi KPIs</li>
+        <li>Seance mensuelle de performance mentale</li>
+      </ul>
+      <a href="/ascent" class="btn btn-outline btn-arrow">Decouvrir Ascent</a>
+    </div>
+    <div class="tier tier-featured">
+      <h3 class="tier-name">Summit</h3>
+      <p class="tier-price">A partir de 8 000 EUR / mois</p>
+      <p class="tier-desc">La transformation. Tout Ascent plus concierge dedie, expeditions et cercle prive de dirigeants.</p>
+      <ul class="tier-features">
+        <li>Tout le programme Ascent inclus</li>
+        <li>Concierge bien-etre dedie 24/7</li>
+        <li>2 expeditions Explora Project par an</li>
+        <li>Bilan Lucis trimestriel + diagnostics avances</li>
+        <li>Masterclasses exclusives avec athletes d'elite</li>
+        <li>Communaute privee de dirigeants</li>
+      </ul>
+      <a href="/summit" class="btn btn-primary btn-arrow">Decouvrir Summit</a>
+    </div>
+    <div class="tier">
+      <h3 class="tier-name">Legacy</h3>
+      <p class="tier-price">A partir de 25 000 EUR / mois</p>
+      <p class="tier-desc">L'ultime. Un programme sur mesure avec votre propre athlete-mentor, des expeditions privees et l'acces aux meilleures cliniques du monde.</p>
+      <ul class="tier-features">
+        <li>Tout le programme Summit inclus</li>
+        <li>Athlete-mentor personnel (ancien olympien ou equivalent)</li>
+        <li>Expeditions privees concues pour vous</li>
+        <li>Programme longevite avec suivi genomique et epigenetique</li>
+        <li>Reseau mondial de cliniques partenaires</li>
+        <li>Evenements sur invitation dans des lieux tenus secrets</li>
+      </ul>
+      <a href="/legacy" class="btn btn-outline btn-arrow">Decouvrir Legacy</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="reveal">
+    <p class="section-label">Nos coachs</p>
+    <h2 class="section-title">Selectionnes. <em>Jamais recrutes.</em></h2>
+    <p class="section-desc">Chaque coach de notre reseau passe un processus de selection rigoureux en 5 etapes. Le parcours d'excellence rencontre la maitrise du coaching et l'intelligence relationnelle.</p>
+  </div>
+  <div class="coaches reveal">
+    <div class="coach">
+      <div class="coach-img" style={`background-image:url('${IMG.pt}')`}></div>
+      <div class="coach-info">
+        <h3 class="coach-name">Johann L.</h3>
+        <p class="coach-role">Co-fondateur / Comite de selection</p>
+        <p class="coach-bio">Ancien n1 mondial et 5x champion d'Europe. 25 ans d'expertise en creation digitale, innovation IA et production video cinematique.</p>
+      </div>
+    </div>
+    <div class="coach">
+      <div class="coach-img" style={`background-image:url('${IMG.pilates}')`}></div>
+      <div class="coach-info">
+        <h3 class="coach-name">Dustin A.</h3>
+        <p class="coach-role">Co-fondateur / Coach principal</p>
+        <p class="coach-bio">Ancien champion de boxe de haut niveau. Fondateur de NATICS. Methode IMPACT / FLOW / VISION.</p>
+      </div>
+    </div>
+    <div class="coach">
+      <div class="coach-img" style={`background-image:url('${IMG.spa}')`}></div>
+      <div class="coach-info">
+        <h3 class="coach-name">Coach elite</h3>
+        <p class="coach-role">Force et conditionnement</p>
+        <p class="coach-bio">Coach certifie performance d'elite. Specialiste des protocoles d'entrainement adaptes aux dirigeants.</p>
+      </div>
+    </div>
+    <div class="coach">
+      <div class="coach-img" style={`background-image:url('${IMG.amenities}')`}></div>
+      <div class="coach-info">
+        <h3 class="coach-name">Expert sante</h3>
+        <p class="coach-role">Nutrition et recuperation</p>
+        <p class="coach-bio">Expert en nutrition sportive. Specialise dans les modes de vie executive sous haute pression.</p>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:48px" class="reveal">
+    <a href="/coachs" class="btn btn-ghost btn-arrow">Voir tous les coachs</a>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="reveal">
+    <p class="section-label">Experiences</p>
+    <h2 class="section-title">Au-dela de la <em>zone de confort</em></h2>
+    <p class="section-desc">Des expeditions transformationnelles et des evenements exclusifs concus pour repousser les limites, forger la resilience et creer des liens entre dirigeants.</p>
+  </div>
+  <div class="experiences reveal">
+    <div class="experience">
+      <div class="experience-img" style={`background-image:url('${IMG.iconic.replace('w=800','w=1200')}')`}></div>
+      <div class="experience-content">
+        <span class="experience-tag">Partenariat Explora Project</span>
+        <h3 class="experience-title">Expedition Leadership Arctique</h3>
+        <p class="experience-desc">7 jours en Laponie suedoise. Tracking sur glace, aurores boreales et ateliers leadership en conditions extremes. Limite a 12 participants.</p>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="experience-img" style={`background-image:url('${IMG.gf.replace('w=1000','w=800')}')`}></div>
+      <div class="experience-content">
+        <span class="experience-tag">Membres Summit et Legacy</span>
+        <h3 class="experience-title">Retraite Biohacking Executive</h3>
+        <p class="experience-desc">5 jours de diagnostics avances, cryotherapie, breathwork et optimisation de performance dans un domaine prive.</p>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="experience-img" style={`background-image:url('${IMG.hero.replace('w=1920','w=1200')}')`}></div>
+      <div class="experience-content">
+        <span class="experience-tag">Sur invitation uniquement</span>
+        <h3 class="experience-title">Le Sommet No Limit</h3>
+        <p class="experience-desc">Rassemblement annuel des membres, coachs et athletes de classe mondiale. Lieu revele 48 heures avant le depart.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="testimonial reveal">
+    <p class="testimonial-quote">"Depuis 20 ans, je dirige des entreprises dans la tourmente. No Limit Academy est le premier programme qui m'a donne le sentiment que quelqu'un me guidait a travers la mienne."</p>
+    <p class="testimonial-author">Temoignage futur membre</p>
+    <p class="testimonial-role">PDG, entreprise du CAC 40</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">La science</p>
+    <h2 class="section-title">La performance guidee par les <em>donnees</em></h2>
+    <p class="section-desc">En partenariat avec Lucis.health, nous offrons l'analyse de sante preventive la plus complete du marche, integree directement dans votre protocole de coaching.</p>
+  </div>
+  <div class="science-grid reveal">
+    <div class="science-card">
+      <p class="science-icon">01 / Biomarqueurs</p>
+      <h3>180+ marqueurs analyses</h3>
+      <p>Profils cardiometaboliques, hormonaux, inflammatoires, hepatiques, renaux et micronutriments. Bien au-dela d'un bilan classique.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">02 / Suivi</p>
+      <h3>Monitoring longitudinal</h3>
+      <p>Vos donnees evoluent avec vous. Suivez vos progres sur des mois et des annees avec un tableau de bord dynamique.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">03 / Wearables</p>
+      <h3>Integration temps reel</h3>
+      <p>Oura Ring, Whoop, Apple Watch. Vos donnees wearables alimentent directement le tableau de bord de votre coach.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">04 / Nutrition</p>
+      <h3>Alimentation de precision</h3>
+      <p>Protocoles nutritionnels personnalises adaptes a vos biomarqueurs, votre agenda de deplacements et vos objectifs de performance.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">05 / Recuperation</p>
+      <h3>Sommeil et regeneration</h3>
+      <p>Analyse avancee de l'architecture du sommeil. Protocoles de recuperation concus pour les dirigeants qui voyagent 200 jours par an.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">06 / Mental</p>
+      <h3>Performance mentale</h3>
+      <p>Conditionnement mental de niveau olympique adapte a la pression du comite de direction. Gestion de la fatigue decisionnelle.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="section-center reveal">
+    <p class="section-label">Partenaires et sponsors</p>
+    <h2 class="section-title">Le Cercle <em>No Limit</em></h2>
+    <p class="section-desc">Un ecosysteme de marques premium, integre a votre experience de coaching. Pas de la publicite. Des prescriptions d'excellence.</p>
+  </div>
+  <div class="partners-grid reveal">
+    <span>Lucis.health</span>
+    <span>Explora Project</span>
+    <span>Oura</span>
+    <span>Whoop</span>
+    <span>Hyperice</span>
+    <span>Thorne</span>
+    <span>NATICS</span>
+    <span>On Running</span>
+    <span>Tag Heuer</span>
+  </div>
+</section>
+
+<section class="split split-reverse reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.iconic.replace('w=800','w=1000')}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">Pour les investisseurs</p>
+    <h2 class="section-title">Une opportunite a <em>10 000 milliards</em></h2>
+    <p class="section-desc">Le marche mondial du bien-etre atteindra 10 000 milliards de dollars d'ici 2030. No Limit Academy se situe a l'intersection du wellness de luxe, de la tech sportive et de la sante preventive. Un espace que personne n'occupe.</p>
+    <p class="section-desc">L'adhesion Equinox a 40 000 dollars par an a plus de 1 000 personnes en liste d'attente. Nous construisons quelque chose de plus intime, de plus intelligent et de plus global.</p>
+    <a href="/investisseurs" class="btn btn-ghost btn-arrow">Demander le deck</a>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style={`background-image:url('${IMG.hero}')`}></div>
+  <div class="cta-banner-content">
+    <p class="section-label reveal">Acces limite</p>
+    <h2 class="section-title reveal">Nous acceptons 50 nouveaux membres <em>par trimestre</em></h2>
+    <p class="section-desc reveal">No Limit Academy n'est pas une salle de sport. Ce n'est pas une application. C'est un engagement entre vous et les meilleurs coachs du monde. Postulez maintenant pour entamer la conversation.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="/candidature" class="btn btn-primary btn-arrow">Postuler comme membre</a>
+      <a href="/candidature" class="btn btn-outline btn-arrow">Postuler comme coach</a>
+    </div>
+  </div>
+</section>
+
+</Layout>

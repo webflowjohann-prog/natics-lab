@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+const IMG = {
+  hero: 'https://images.ctfassets.net/drib7o8rcbyf/7xaVBLqmztmYQGrXBg0pqx/01d2a0130ad7a05585663d9600b437eb/CORE_ANCILLARIES_MODULE__GF_375x563-min.jpg?fm=webp&fit=fill&w=1920',
+  pt: 'https://images.ctfassets.net/drib7o8rcbyf/64oMt8msJ0h1l75i0ejdfs/51022d60a8ac8c3915436d1ede080321/CORE_ANCILLARIES_MODULE__PT_375x563-min.jpg?fm=webp&fit=fill&w=800',
+  spa: 'https://images.ctfassets.net/drib7o8rcbyf/1Z0EStzVUSZJUjkCqHMkol/9c9c7601c4fa6b4532fd2c77803dbe36/REGENERATION_MODULE__SPA_375x563-min.jpg?fm=webp&fit=fill&w=800',
+  iconic: 'https://images.ctfassets.net/drib7o8rcbyf/3nHzLEyA0EUbwptegIjvpR/d00dffbc475fe36f129523a6e672b1e6/REGENERATION_MODULE__ICONIC_SPACES_375x563-min.jpg?fm=webp&fit=fill&w=800',
+  gf: 'https://images.ctfassets.net/drib7o8rcbyf/7xaVBLqmztmYQGrXBg0pqx/01d2a0130ad7a05585663d9600b437eb/CORE_ANCILLARIES_MODULE__GF_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  pilates: 'https://images.ctfassets.net/drib7o8rcbyf/3SSkmL8U5YBGKCPkJoIdib/07d03a08278a1f3576dc52cdb2ed5e79/CORE_ANCILLARIES_MODULE__STUDIO_PILATES_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  red: 'https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920',
+};
+---
+<Layout title="Concept | No Limit Academy" description="Decouvrez les 3 piliers de No Limit Academy : coaching d'elite, science preventive et experiences transformationnelles.">
+
+<div class="page-hero">
+  <div class="page-hero-bg" style={`background-image:url('${IMG.hero}')`}></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-label">Notre concept</p>
+    <h1 class="section-title" style="font-size:clamp(40px,6vw,72px)">Un ecosysteme.<br><em>Un potentiel illimite.</em></h1>
+    <p style="font-size:18px;color:var(--gray-light);margin-top:16px;max-width:600px">La premiere plateforme au monde qui reunit coaching d'elite, science preventive et experiences extremes pour dirigeants.</p>
+  </div>
+</div>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">Les 3 piliers</p>
+    <h2 class="section-title">Trois dimensions.<br><em>Une transformation.</em></h2>
+    <p class="section-desc">No Limit Academy n'est pas un programme. C'est un ecosysteme complet, concu pour les dirigeants qui exigent plus — de leur corps, de leur esprit et de leur entourage.</p>
+  </div>
+  <div class="pillars reveal">
+    <div class="pillar">
+      <div class="pillar-img" style={`background-image:url('${IMG.pt}')`}></div>
+      <div class="pillar-content">
+        <p class="pillar-number">01</p>
+        <h3 class="pillar-title">Coaching d'elite</h3>
+        <p class="pillar-text">Des coachs tries sur le volet par un comite d'anciens athletes de haut niveau mondial. Selection rigoureuse en 5 etapes. Aucun compromis sur l'excellence.</p>
+        <a href="/coachs" class="pillar-link">Decouvrir nos coachs</a>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-img" style={`background-image:url('${IMG.spa}')`}></div>
+      <div class="pillar-content">
+        <p class="pillar-number">02</p>
+        <h3 class="pillar-title">Science preventive</h3>
+        <p class="pillar-text">180+ biomarqueurs analyses. Suivi longitudinal. Recommandations personnalisees par des experts medicaux. Integration wearables en temps reel.</p>
+        <a href="/science" class="pillar-link">Explorer la science</a>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-img" style={`background-image:url('${IMG.iconic}')`}></div>
+      <div class="pillar-content">
+        <p class="pillar-number">03</p>
+        <h3 class="pillar-title">Experiences transformationnelles</h3>
+        <p class="pillar-text">Expeditions extremes, retraites exclusives et evenements sur invitation. Des experiences qui repoussent vos limites et forgent votre leadership.</p>
+        <a href="/experiences" class="pillar-link">Voir les experiences</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="split reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.gf}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">La genese</p>
+    <h2 class="section-title">Forge par l'elite.<br>Pour ceux qui <em>dirigent.</em></h2>
+    <p class="section-desc">Fonde par Johann Langenberg, ancien numero 1 mondial et 5 fois champion d'Europe, et Dustin Arnold, ancien champion de boxe et fondateur de NATICS. Deux parcours d'excellence, une conviction partagee.</p>
+    <p class="section-desc">La discipline, la resilience et la force mentale qui forgent les athletes d'elite sont les memes qualites qui definissent les dirigeants d'exception. No Limit Academy est ne de cette evidence.</p>
+    <a href="/coachs" class="btn btn-ghost btn-arrow">Decouvrir les fondateurs</a>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="stats reveal">
+    <div class="stat"><div class="stat-number">180+</div><div class="stat-label">Biomarqueurs suivis</div></div>
+    <div class="stat"><div class="stat-number">50</div><div class="stat-label">Membres par trimestre</div></div>
+    <div class="stat"><div class="stat-number">98%</div><div class="stat-label">Selectivite des candidatures</div></div>
+    <div class="stat"><div class="stat-number">24/7</div><div class="stat-label">Concierge bien-etre</div></div>
+  </div>
+</section>
+
+<section class="split split-reverse reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.pilates}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">La methode</p>
+    <h2 class="section-title">IMPACT. FLOW. <em>VISION.</em></h2>
+    <p class="section-desc">La methode de Dustin Arnold repose sur trois axes fondamentaux. IMPACT : la performance physique et la force brute. FLOW : l'equilibre et la fluidite du mouvement. VISION : la maitrise du corps et de l'esprit sur le long terme.</p>
+    <p class="section-desc">Johann Langenberg y ajoute 25 ans de creation digitale, de production video cinematique et d'innovation IA. Le coaching devient une experience totale, documentee et evolutive.</p>
+    <a href="/programmes" class="btn btn-primary btn-arrow">Voir les programmes</a>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style={`background-image:url('${IMG.red}')`}></div>
+  <div class="cta-banner-content">
+    <p class="section-label reveal">Rejoindre l'academie</p>
+    <h2 class="section-title reveal">Pret a repousser vos <em>limites</em> ?</h2>
+    <p class="section-desc reveal">50 places par trimestre. Sur candidature uniquement. Postulez maintenant pour entamer la conversation.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="/candidature" class="btn btn-primary btn-arrow">Postuler</a>
+      <a href="/programmes" class="btn btn-outline btn-arrow">Voir les programmes</a>
+    </div>
+  </div>
+</section>
+
+</Layout>

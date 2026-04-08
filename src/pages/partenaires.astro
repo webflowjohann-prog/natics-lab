@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+const IMG = {
+  hero: 'https://images.ctfassets.net/drib7o8rcbyf/3jxErqCGFfGDk4HdpTvBhH/40e1d98bddae5be182a0eb5c65e56d59/REGENERATION_MODULE__Amenities_375x563-min.jpg?fm=webp&fit=fill&w=1920',
+  split: 'https://images.ctfassets.net/drib7o8rcbyf/1Z0EStzVUSZJUjkCqHMkol/9c9c7601c4fa6b4532fd2c77803dbe36/REGENERATION_MODULE__SPA_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  split2: 'https://images.ctfassets.net/drib7o8rcbyf/3nHzLEyA0EUbwptegIjvpR/d00dffbc475fe36f129523a6e672b1e6/REGENERATION_MODULE__ICONIC_SPACES_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  red: 'https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920',
+};
+---
+<Layout title="Partenaires | No Limit Academy" description="Le Cercle No Limit — un ecosysteme de marques premium integre a votre experience de coaching. Lucis.health, Explora Project, Oura, Whoop et plus.">
+
+<div class="page-hero">
+  <div class="page-hero-bg" style={`background-image:url('${IMG.hero}')`}></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-label">Partenaires et sponsors</p>
+    <h1 class="section-title" style="font-size:clamp(40px,6vw,72px)">Le Cercle<br><em>No Limit</em></h1>
+    <p style="font-size:18px;color:var(--gray-light);margin-top:16px;max-width:600px">Un ecosysteme de marques premium integre a votre experience de coaching. Pas de la publicite. Des prescriptions d'excellence.</p>
+  </div>
+</div>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">Nos partenaires</p>
+    <h2 class="section-title">Chaque partenaire est <em>une prescription</em></h2>
+    <p class="section-desc">No Limit Academy ne signe pas des contrats de publicite. Nous selectionnons des partenaires dont nous utilisons et recommandons les produits et services a nos membres. L'excellence appelle l'excellence.</p>
+  </div>
+  <div class="partners-grid reveal">
+    <span>Lucis.health</span>
+    <span>Explora Project</span>
+    <span>Oura</span>
+    <span>Whoop</span>
+    <span>Hyperice</span>
+    <span>Thorne</span>
+    <span>NATICS</span>
+    <span>On Running</span>
+    <span>Tag Heuer</span>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="science-grid reveal">
+    <div class="science-card">
+      <p class="science-icon">Sante</p>
+      <h3>Lucis.health</h3>
+      <p>Partenaire sante exclusif. 180+ biomarqueurs. La plateforme d'analyse preventive la plus complete du marche. Inclus dans tous les programmes NLA.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Expeditions</p>
+      <h3>Explora Project</h3>
+      <p>Partenaire expeditions. Co-concepteurs de nos experiences de leadership en milieu extreme. Arctique, haute montagne, desert. Les meilleurs guides du monde.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Wearable</p>
+      <h3>Oura Ring</h3>
+      <p>Anneau connecte integre au CRM NLA. La reference du suivi du sommeil et de la recuperation. Synchronisation automatique avec le tableau de bord coach.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Wearable</p>
+      <h3>Whoop</h3>
+      <p>Bracelet de performance integre. Suivi de la charge d'entrainement, de la recuperation et de l'etat de forme en temps reel. Complementaire a l'Oura Ring.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Recuperation</p>
+      <h3>Hyperice</h3>
+      <p>Leader mondial de la recuperation par percussions et thermotherapie. Les outils recommandes par nos coachs pour accelerer la recuperation entre les seances.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Supplements</p>
+      <h3>Thorne</h3>
+      <p>Complement alimentaire de reference des athletes olympiques. Qualite pharmaceutique, formulations scientifiques. Les seuls supplements prescrits par nos experts nutrition.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Studio</p>
+      <h3>NATICS</h3>
+      <p>Studio prive de coaching fonde par Dustin Arnold a Bois-Guillaume. Base d'operations de No Limit Academy en Normandie. Acces exclusif pour les membres.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Running</p>
+      <h3>On Running</h3>
+      <p>Partenaire performance running. La technologie CloudTec pour les sessions d'endurance de nos membres. Equipement recommande pour la performance en deplacement.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Precision</p>
+      <h3>Tag Heuer</h3>
+      <p>Partenaire horlogerie de precision. Les montres connectees Tag Heuer s'integrent a notre ecosysteme pour les membres qui allient performance et prestige.</p>
+    </div>
+  </div>
+</section>
+
+<section class="split reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.split}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">Devenir partenaire</p>
+    <h2 class="section-title">Rejoindre le Cercle <em>No Limit</em></h2>
+    <p class="section-desc">Votre marque partage nos valeurs d'excellence, de performance et d'innovation ? Nous selectionnons nos partenaires avec le meme soin que nos coachs. Chaque partenariat est exclusif dans sa categorie.</p>
+    <p class="section-desc">Nos membres sont des dirigeants avec un fort pouvoir d'achat, une influence reelle et une confiance profonde dans les recommandations de No Limit Academy. Un canal d'acquisition unique.</p>
+    <a href="mailto:partenaires@no-limit-academy.com" class="btn btn-primary btn-arrow">Nous contacter</a>
+  </div>
+</section>
+
+<section class="split split-reverse reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.split2}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">Pour les marques</p>
+    <h2 class="section-title">Un acces direct aux <em>decideurs</em></h2>
+    <p class="section-desc">50 nouveaux dirigeants par trimestre. Des profils CAC 40, startups en hypercroissance, dirigeants PME ambitieux. Des individus qui font confiance a No Limit Academy et qui suivent ses recommandations.</p>
+    <a href="mailto:partenaires@no-limit-academy.com" class="btn btn-ghost btn-arrow">Demander le dossier media</a>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style={`background-image:url('${IMG.red}')`}></div>
+  <div class="cta-banner-content">
+    <p class="section-label reveal">Ensemble</p>
+    <h2 class="section-title reveal">Construisons quelque chose <em>d'exceptionnel</em></h2>
+    <p class="section-desc reveal">Partenariats exclusifs. Presence aupres de 200+ dirigeants d'ici fin 2026. Contactez-nous pour discuter.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="mailto:partenaires@no-limit-academy.com" class="btn btn-primary btn-arrow">Devenir partenaire</a>
+    </div>
+  </div>
+</section>
+
+</Layout>

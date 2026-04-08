@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+const IMG = {
+  hero: 'https://images.ctfassets.net/drib7o8rcbyf/3SSkmL8U5YBGKCPkJoIdib/07d03a08278a1f3576dc52cdb2ed5e79/CORE_ANCILLARIES_MODULE__STUDIO_PILATES_375x563-min.jpg?fm=webp&fit=fill&w=1920',
+  split: 'https://images.ctfassets.net/drib7o8rcbyf/64oMt8msJ0h1l75i0ejdfs/51022d60a8ac8c3915436d1ede080321/CORE_ANCILLARIES_MODULE__PT_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  red: 'https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920',
+};
+---
+<Layout title="Contact | No Limit Academy" description="Contactez No Limit Academy. Pour les candidatures membres, coachs, partenariats et relations investisseurs.">
+
+<div class="page-hero">
+  <div class="page-hero-bg" style={`background-image:url('${IMG.hero}')`}></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-label">Contact</p>
+    <h1 class="section-title" style="font-size:clamp(40px,6vw,72px)">Entamons la<br><em>conversation</em></h1>
+    <p style="font-size:18px;color:var(--gray-light);margin-top:16px;max-width:600px">Notre equipe repond dans les 48 heures ouvrables. Nous prenons le temps de comprendre chaque demande avant d'y repondre.</p>
+  </div>
+</div>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">Nous contacter</p>
+    <h2 class="section-title">La bonne adresse<br><em>pour chaque sujet</em></h2>
+  </div>
+  <div class="science-grid reveal">
+    <div class="science-card">
+      <p class="science-icon">Candidature membre</p>
+      <h3>Devenir membre</h3>
+      <p>Vous souhaitez rejoindre No Limit Academy en tant que membre ? Envoyez votre profil et vos objectifs a :</p>
+      <p style="margin-top:16px"><a href="mailto:apply@no-limit-academy.com" style="color:var(--gold);font-family:var(--font-mono);font-size:13px">apply@no-limit-academy.com</a></p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Candidature coach</p>
+      <h3>Rejoindre le reseau coach</h3>
+      <p>Coach certifie avec un parcours d'excellence ? Postulez pour rejoindre notre reseau selectionne :</p>
+      <p style="margin-top:16px"><a href="mailto:coaches@no-limit-academy.com" style="color:var(--gold);font-family:var(--font-mono);font-size:13px">coaches@no-limit-academy.com</a></p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Partenariats</p>
+      <h3>Rejoindre le Cercle No Limit</h3>
+      <p>Votre marque partage nos valeurs d'excellence ? Discutons d'un partenariat exclusif :</p>
+      <p style="margin-top:16px"><a href="mailto:partenaires@no-limit-academy.com" style="color:var(--gold);font-family:var(--font-mono);font-size:13px">partenaires@no-limit-academy.com</a></p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Investisseurs</p>
+      <h3>Relations investisseurs</h3>
+      <p>Vous souhaitez investir ou recevoir le deck investisseurs ? Contactez directement les fondateurs :</p>
+      <p style="margin-top:16px"><a href="mailto:contact@no-limit-academy.com" style="color:var(--gold);font-family:var(--font-mono);font-size:13px">contact@no-limit-academy.com</a></p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Presse</p>
+      <h3>Relations presse</h3>
+      <p>Vous etes journaliste ou souhaitez couvrir No Limit Academy ? Notre equipe presse est disponible :</p>
+      <p style="margin-top:16px"><a href="mailto:presse@no-limit-academy.com" style="color:var(--gold);font-family:var(--font-mono);font-size:13px">presse@no-limit-academy.com</a></p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">General</p>
+      <h3>Toute autre demande</h3>
+      <p>Pour toute autre question ou demande d'information generale sur No Limit Academy :</p>
+      <p style="margin-top:16px"><a href="mailto:contact@no-limit-academy.com" style="color:var(--gold);font-family:var(--font-mono);font-size:13px">contact@no-limit-academy.com</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="split reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.split}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">Nos bureaux</p>
+    <h2 class="section-title">Bois-Guillaume.<br><em>Paris. Bientot le monde.</em></h2>
+    <p class="section-desc">No Limit Academy est base a Bois-Guillaume (Normandie), au coeur du studio NATICS fonde par Dustin Arnold. Nos operations digitales et la coordination du reseau de coachs sont gerees depuis Paris.</p>
+    <p class="section-desc">Expansion prevue en 2026 : Londres, Geneve, Dubai. 2027 : Singapore, New York.</p>
+    <a href="/investisseurs" class="btn btn-ghost btn-arrow">Notre vision de croissance</a>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="stats reveal">
+    <div class="stat"><div class="stat-number">48h</div><div class="stat-label">Delai de reponse garanti</div></div>
+    <div class="stat"><div class="stat-number">5</div><div class="stat-label">Adresses email dediees</div></div>
+    <div class="stat"><div class="stat-number">2</div><div class="stat-label">Fondateurs accessibles</div></div>
+    <div class="stat"><div class="stat-number">0</div><div class="stat-label">Call center. Humains uniquement.</div></div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style={`background-image:url('${IMG.red}')`}></div>
+  <div class="cta-banner-content">
+    <p class="section-label reveal">Premiere etape</p>
+    <h2 class="section-title reveal">Postulez.<br><em>Nous repondons.</em></h2>
+    <p class="section-desc reveal">50 places par trimestre. Sur candidature uniquement. La conversation commence par un email.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="mailto:apply@no-limit-academy.com" class="btn btn-primary btn-arrow">Postuler comme membre</a>
+      <a href="mailto:coaches@no-limit-academy.com" class="btn btn-outline btn-arrow">Postuler comme coach</a>
+    </div>
+  </div>
+</section>
+
+</Layout>
