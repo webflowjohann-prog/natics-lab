@@ -234,6 +234,13 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
 /* ─── Groupe de boutons centré (hors cta-band) ─── */
 .btns-center { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; width: 100%; }
 
+/* ─── Grilles étapes coach / phases investir / fondateurs ─── */
+.steps-grid-top { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); margin-top: 56px; }
+.steps-grid-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); margin-top: 1px; max-width: calc(66.666% + 1px); }
+.phases-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); margin-top: 40px; }
+.founders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); max-width: 960px; margin: 56px auto 0; }
+.founder-expand-btn { display: none; color: var(--gold); font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; margin-top: 12px; background: none; border: none; padding: 0; }
+
 /* ─── Expériences ─── */
 .exp-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--border); margin-top: 56px; }
 .exp-card { position: relative; min-height: 420px; overflow: hidden; }
@@ -272,6 +279,20 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
   .stats { grid-template-columns: 1fr 1fr; }
   .exp-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  /* Grilles empilées mobile */
+  .steps-grid-top,
+  .steps-grid-bottom { display: flex; flex-direction: column; max-width: 100%; gap: 1px; }
+  .phases-grid { display: flex; flex-direction: column; }
+  .founders-grid { display: flex; flex-direction: column; max-width: 100%; }
+  /* Bios fondateurs : version courte sur mobile */
+  .founder-bio-long { display: none; }
+  .founder-bio-short { display: block; }
+  .founder-expand-btn { display: inline-block; }
+}
+@media (min-width: 901px) {
+  .founder-bio-short { display: none; }
+  .founder-bio-long { display: block; }
+  .founder-expand-btn { display: none; }
 }
 @media (max-width: 640px) {
   .nav-links { display: none; }
@@ -344,6 +365,18 @@ document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 const ham = document.querySelector('.nav-hamburger');
 const mob = document.querySelector('.nav-mobile');
 if(ham && mob) ham.addEventListener('click', () => mob.classList.toggle('open'));
+
+document.querySelectorAll('.founder-expand-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.card');
+    if (!card) return;
+    const shortBio = card.querySelector('.founder-bio-short');
+    const longBio = card.querySelector('.founder-bio-long');
+    if (shortBio) shortBio.style.display = 'none';
+    if (longBio) longBio.style.display = 'block';
+    btn.style.display = 'none';
+  });
+});
 </script>
 </body>
 </html>
