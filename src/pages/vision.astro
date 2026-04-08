@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+const IMG = {
+  hero: 'https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920',
+  split: 'https://images.ctfassets.net/drib7o8rcbyf/3nHzLEyA0EUbwptegIjvpR/d00dffbc475fe36f129523a6e672b1e6/REGENERATION_MODULE__ICONIC_SPACES_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  split2: 'https://images.ctfassets.net/drib7o8rcbyf/1Z0EStzVUSZJUjkCqHMkol/9c9c7601c4fa6b4532fd2c77803dbe36/REGENERATION_MODULE__SPA_375x563-min.jpg?fm=webp&fit=fill&w=1000',
+  cta: 'https://images.ctfassets.net/drib7o8rcbyf/7xaVBLqmztmYQGrXBg0pqx/01d2a0130ad7a05585663d9600b437eb/CORE_ANCILLARIES_MODULE__GF_375x563-min.jpg?fm=webp&fit=fill&w=1920',
+};
+---
+<Layout
+  title="Programme VISION | No Limit Academy"
+  description="VISION — l'ultime niveau. Neurofeedback, génomique, équipe médicale dédiée, communauté privée, accès prioritaire expériences. 3 500 à 5 000 €/mois."
+>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style={`background-image:url('${IMG.hero}')`}></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="section-label">Programme ultime</p>
+    <h1 class="section-title" style="font-size:clamp(40px,6vw,72px)"><em>VISION</em></h1>
+    <p style="font-size:clamp(15px,1.6vw,20px);color:var(--gray-light);margin-top:16px;font-family:var(--font-mono)">3 500 à 5 000 €/mois</p>
+    <p style="font-size:18px;color:var(--gray-light);margin-top:16px;max-width:600px">Tout FLOW, plus neurofeedback, analyse génomique, équipe médicale dédiée, communauté privée et accès prioritaire à l'ensemble des expériences NLA.</p>
+  </div>
+</div>
+
+<section class="section section-dark">
+  <div class="section-center reveal">
+    <p class="section-label">Ce qui est inclus</p>
+    <h2 class="section-title">Tout FLOW. <em>Et la maîtrise totale.</em></h2>
+  </div>
+  <div class="science-grid reveal">
+    <div class="science-card">
+      <p class="science-icon">FLOW complet</p>
+      <h3>Tout le programme FLOW</h3>
+      <p>L'intégralité de FLOW est incluse : coaching 3×/sem, sophrologie, breathwork, nutrition de précision, bilan trimestriel, mental bimensuel, spécialistes.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Neurosciences</p>
+      <h3>Neurofeedback</h3>
+      <p>Séances de neurofeedback pour entraîner directement les ondes cérébrales. Focus, résilience sous pression, gestion de l'anxiété décisionnelle. La frontière de la performance mentale.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Longévité</p>
+      <h3>Analyse génomique</h3>
+      <p>Séquençage génomique et analyse épigénétique. Comprendre votre biologie profonde pour des protocoles sur mesure et une vision de votre santé sur 20, 30, 40 ans.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Équipe dédiée</p>
+      <h3>Équipe médicale personnelle</h3>
+      <p>Un médecin référent, un nutritionniste et un psychologue du sport dédiés à votre profil. Coordination permanente entre tous les acteurs de votre performance.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Réseau</p>
+      <h3>Communauté privée VISION</h3>
+      <p>Accès à la communauté privée des membres VISION. Cercle restreint de dirigeants au même niveau d'exigence. Échanges confidentiels, synergies réelles.</p>
+    </div>
+    <div class="science-card">
+      <p class="science-icon">Priorité</p>
+      <h3>Accès prioritaire expériences</h3>
+      <p>Accès en avant-première et tarif préférentiel sur toutes les expériences NLA : expéditions, retraites biohacking, masterclasses athlètes, upgrade bilan Zoï.</p>
+    </div>
+  </div>
+</section>
+
+<section class="split reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.split}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">Le neurofeedback</p>
+    <h2 class="section-title">Entraîner le cerveau <em>comme un muscle</em></h2>
+    <p class="section-desc">Le neurofeedback est la technique utilisée par les athlètes olympiques pour optimiser leurs ondes cérébrales. No Limit Academy l'intègre pour la première fois dans un programme de coaching pour dirigeants.</p>
+    <p class="section-desc">Focus prolongé, résistance à la pression décisionnelle, gestion de l'anxiété de performance. Des résultats mesurables en 8 à 12 séances.</p>
+    <a href="/candidature" class="btn btn-primary btn-arrow">Postuler pour VISION</a>
+  </div>
+</section>
+
+<section class="split split-reverse reveal">
+  <div class="split-img">
+    <div class="split-img-bg" style={`background-image:url('${IMG.split2}')`}></div>
+  </div>
+  <div class="split-body">
+    <p class="section-label">Expériences à la carte</p>
+    <h2 class="section-title">Les expériences NLA,<br><em>en priorité</em></h2>
+    <p class="section-desc">Les membres VISION ont accès en priorité à tout le catalogue d'expériences No Limit Academy : Expédition Arctique, Retraite Biohacking, Traversée Alpine, Le Sommet No Limit et plus encore.</p>
+    <p class="section-desc">Ces expériences sont optionnelles, à la carte. VISION vous donne l'accès prioritaire et un tarif préférentiel sur chacune d'elles.</p>
+    <a href="/experiences" class="btn btn-ghost btn-arrow">Voir le catalogue</a>
+  </div>
+</section>
+
+<section class="section section-darker">
+  <div class="testimonial reveal">
+    <p class="testimonial-quote">« VISION n'est pas un programme de bien-être. C'est un investissement dans ma capacité à diriger pendant 20 ans encore. Le neurofeedback seul a changé mon rapport au stress plus que 10 ans de méditation. »</p>
+    <p class="testimonial-author">Membre VISION</p>
+    <p class="testimonial-role">Fondateur, licorne européenne</p>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="cta-banner-bg" style={`background-image:url('${IMG.cta}')`}></div>
+  <div class="cta-banner-content">
+    <p class="section-label reveal">L'ultime</p>
+    <h2 class="section-title reveal">Rejoindre VISION.<br><em>Définir votre horizon.</em></h2>
+    <p class="section-desc reveal">3 500 à 5 000 €/mois. Sélection individuelle. Entretien avec les fondateurs requis.</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="/candidature" class="btn btn-primary btn-arrow">Demander un entretien</a>
+      <a href="/programmes" class="btn btn-outline">Comparer les programmes</a>
+    </div>
+  </div>
+</section>
+
+</Layout>
