@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Membre | No Limit Academy" description="Votre transformation, commencée. Un programme sur mesure, une équipe dédiée, une technologie propriétaire pour dirigeants visionnaires.">
+<Layout title="Membre | No Limit Academy" description="CORTEX Essential ou Premium. L'intelligence santé personnalisée pour dirigeants. Oura Ring, CORTEX Score, coachs certifiés et drops d'expériences validées.">
 
   <!-- ─── HERO ─── -->
   <section class="page-hero">
@@ -10,66 +10,51 @@ import Layout from '../layouts/Layout.astro';
     <div class="page-hero-content">
       <span class="label">Pour les dirigeants</span>
       <h1>Votre <em>transformation,</em> commencée.</h1>
-      <p style="font-size:clamp(15px,1.5vw,17px);color:var(--gray);font-weight:300;max-width:560px;margin-top:20px;line-height:1.7;">Un programme sur mesure, une équipe dédiée, une technologie propriétaire. Pour les dirigeants qui exigent l'excellence dans tout ce qu'ils font.</p>
+      <p style="font-size:clamp(15px,1.5vw,17px);color:var(--gray);font-weight:300;max-width:560px;margin-top:20px;line-height:1.7;">La plateforme d'intelligence santé conçue pour les dirigeants qui exigent l'excellence. CORTEX agrège, analyse et anticipe — vos coachs certifiés transforment.</p>
     </div>
   </section>
 
-  <!-- ─── PROGRAMMES ─── -->
-  <section id="impact" class="section section-dark">
+  <!-- ─── OFFRES ─── -->
+  <section id="essential" class="section section-dark">
     <div class="reveal">
-      <span class="label">Les programmes</span>
-      <h2 class="section-title">Trois voies.<br>Une seule <em>ambition.</em></h2>
-      <p class="section-desc">Chaque programme est un abonnement mensuel. Les expériences NLA — expéditions, retraites, masterclasses — sont disponibles séparément, à la carte.</p>
+      <span class="label">Les offres</span>
+      <h2 class="section-title">Deux niveaux.<br>Une seule <em>intelligence.</em></h2>
+      <p class="section-desc">Chaque abonnement inclut la plateforme CORTEX et une Oura Ring connectée. Les expériences sont disponibles à la carte, validées par votre CORTEX Score.</p>
     </div>
-    <div class="tiers reveal">
-      <div class="tier" id="impact-tier">
-        <div class="tier-label">Socle</div>
-        <div class="tier-name">IMPACT</div>
-        <div class="tier-price">990 – 1 500 €/mois</div>
-        <div class="tier-desc">Les fondations. Coaching d'élite, biométrie continue et suivi santé semestriel.</div>
+    <div class="tiers-2 reveal" id="premium">
+      <div class="tier">
+        <div class="tier-label">L'essentiel</div>
+        <div class="tier-name">CORTEX Essential</div>
+        <div class="tier-price">149 – 249 €/mois</div>
+        <div class="tier-desc">La plateforme d'intelligence santé. Oura Ring, import Lucis & Zoï, CORTEX Score quotidien et accès à l'annuaire des coachs certifiés.</div>
         <ul class="tier-list">
-          <li>3 séances de coaching / semaine</li>
+          <li>Plateforme CORTEX (iOS &amp; Android)</li>
           <li>Oura Ring connectée à CORTEX (incluse)</li>
-          <li>Bilan Lucis semestriel (180+ biomarqueurs)</li>
-          <li>Plan nutrition et sommeil personnalisé</li>
-          <li>Dashboard KPIs CORTEX</li>
-          <li>1 séance mentale / mois</li>
+          <li>Import données Lucis &amp; Zoï</li>
+          <li>CORTEX Score quotidien</li>
+          <li>Annuaire coachs certifiés NLA</li>
+          <li>Accès drops standard</li>
         </ul>
-        <a href="mailto:apply@no-limit-academy.com" class="btn btn-outline btn-arrow">Postuler pour IMPACT</a>
+        <a href="mailto:apply@no-limit-academy.com" class="btn btn-outline btn-arrow">Postuler pour Essential</a>
       </div>
-      <div class="tier tier-featured" id="flow">
+      <div class="tier tier-featured">
         <div class="tier-label">Le plus choisi</div>
-        <div class="tier-name">FLOW</div>
-        <div class="tier-price">2 000 – 2 800 €/mois</div>
-        <div class="tier-desc">La transformation complète. Tout IMPACT, plus sophrologie, breathwork et suivi médical renforcé.</div>
+        <div class="tier-name">CORTEX Premium</div>
+        <div class="tier-price">490 – 790 €/mois</div>
+        <div class="tier-desc">L'intelligence santé complète. Validation biométrique des expériences, protocoles personnalisés et concierge IA 24/7.</div>
         <ul class="tier-list">
-          <li>Tout le programme IMPACT inclus</li>
-          <li>Sophrologie et breathwork réguliers</li>
-          <li>Nutrition de précision (micronutriments, chrononutrition)</li>
-          <li>Bilan Lucis trimestriel</li>
-          <li>Suivi mental bimensuel</li>
-          <li>Accès réseau spécialistes NLA</li>
+          <li>Tout CORTEX Essential inclus</li>
+          <li>Validation expériences par biomarqueurs</li>
+          <li>Protocoles personnalisés CORTEX</li>
+          <li>Accès prioritaire aux drops</li>
+          <li>Concierge IA 24/7</li>
+          <li>Analyse Lucis trimestrielle</li>
         </ul>
-        <a href="mailto:apply@no-limit-academy.com" class="btn btn-gold btn-arrow">Postuler pour FLOW</a>
-      </div>
-      <div class="tier" id="vision">
-        <div class="tier-label">L'ultime</div>
-        <div class="tier-name">VISION</div>
-        <div class="tier-price">3 500 – 5 000 €/mois</div>
-        <div class="tier-desc">La maîtrise totale. Tout FLOW, plus neurofeedback, génomique et équipe médicale dédiée.</div>
-        <ul class="tier-list">
-          <li>Tout le programme FLOW inclus</li>
-          <li>Séances de neurofeedback</li>
-          <li>Analyse génomique et épigénétique</li>
-          <li>Équipe médicale personnelle dédiée</li>
-          <li>Communauté privée VISION</li>
-          <li>Accès prioritaire aux expériences NLA</li>
-        </ul>
-        <a href="mailto:apply@no-limit-academy.com" class="btn btn-outline btn-arrow">Postuler pour VISION</a>
+        <a href="mailto:apply@no-limit-academy.com" class="btn btn-gold btn-arrow">Postuler pour Premium</a>
       </div>
     </div>
-    <p class="reveal" style="margin-top:32px;font-size:13px;color:var(--gray);font-weight:300;">
-      Les expériences sont optionnelles — <a href="#experiences" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px;">catalogue à la carte →</a>
+    <p class="reveal" style="margin-top:32px;font-size:13px;color:var(--text-light);font-weight:300;">
+      Les expériences sont validées par CORTEX Score — <a href="#drops" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px;">voir le calendrier des drops →</a>
     </p>
   </section>
 
@@ -78,9 +63,9 @@ import Layout from '../layouts/Layout.astro';
     <div class="split">
       <div class="split-body reveal">
         <span class="label">CORTEX by No Limit Academy</span>
-        <h2 class="section-title">CORTEX by No&nbsp;Limit&nbsp;Academy.<br><em>L'intelligence de votre performance.</em></h2>
-        <p class="section-desc">CORTEX n'est pas une application. C'est un système d'intelligence supervisé par vos spécialistes NLA. Il agrège HRV, sommeil, biomarqueurs sanguins et charge d'entraînement pour générer un plan quotidien actualisé.</p>
-        <p style="font-size:14px;color:var(--gray);font-weight:300;line-height:1.7;margin-bottom:40px;">Chaque recommandation CORTEX est validée par votre médecin référent et votre coach avant d'être intégrée à votre programme. L'IA optimise. L'humain décide.</p>
+        <h2 class="section-title">CORTEX by No&nbsp;Limit&nbsp;Academy.<br><em>L'intelligence qui anticipe.</em></h2>
+        <p class="section-desc">CORTEX n'est pas une application. C'est un système d'intelligence supervisé par vos spécialistes NLA. Il agrège HRV, sommeil, biomarqueurs sanguins Lucis, diagnostics Zoï et charge d'entraînement pour générer un plan quotidien actualisé.</p>
+        <p style="font-size:14px;color:var(--text-light);font-weight:300;line-height:1.7;margin-bottom:40px;">Chaque recommandation CORTEX est validée par votre coach certifié avant d'être intégrée à votre programme. L'IA optimise. L'humain décide.</p>
         <a href="mailto:apply@no-limit-academy.com" class="btn btn-ghost btn-arrow">Postuler maintenant</a>
       </div>
       <div class="split-body" style="background:#111;display:flex;align-items:center;justify-content:center;padding:clamp(32px,4vw,60px);">
@@ -109,10 +94,10 @@ import Layout from '../layouts/Layout.astro';
               <div class="cortex-metric-trend up">↑ Excellent</div>
             </div>
             <div class="cortex-metric">
-              <div class="cortex-metric-lbl">Charge entraînement</div>
-              <div class="cortex-metric-val">68 <span>/100</span></div>
-              <div class="cortex-bar-wrap"><div class="cortex-bar-fill" style="width:68%"></div></div>
-              <div class="cortex-metric-trend neutral">→ Nominal</div>
+              <div class="cortex-metric-lbl">CORTEX Score</div>
+              <div class="cortex-metric-val">78 <span>/100</span></div>
+              <div class="cortex-bar-wrap"><div class="cortex-bar-fill" style="width:78%"></div></div>
+              <div class="cortex-metric-trend up">↑ Performer</div>
             </div>
           </div>
           <div class="cortex-db-insight">
@@ -124,28 +109,199 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- ─── CORTEX SCORE ─── -->
+  <section id="score" class="section section-dark">
+    <div class="split">
+      <div class="split-body reveal">
+        <span class="label">CORTEX Score</span>
+        <h2 class="section-title">Votre santé a un <em>score.</em></h2>
+        <p class="section-desc">Chaque matin, CORTEX calcule votre Score sur 100 à partir de votre HRV, votre sommeil, vos biomarqueurs Lucis et votre charge d'entraînement. Le Score évolue chaque jour et débloque vos accès aux drops d'expériences.</p>
+        <ul class="tier-list" style="margin-bottom:40px;">
+          <li><strong style="color:var(--gold)">Elite 85–100</strong> — Performances optimales. Accès complet à tous les drops.</li>
+          <li><strong style="color:var(--text-heading)">Performer 70–84</strong> — En pleine capacité. Drops standard accessibles.</li>
+          <li><strong style="color:var(--text-heading)">Active 40–69</strong> — Phase de progression. Protocoles de consolidation.</li>
+          <li><strong style="color:var(--text-heading)">Onboarding 0–39</strong> — Phase d'intégration. Focus fondations.</li>
+        </ul>
+        <a href="mailto:apply@no-limit-academy.com" class="btn btn-ghost btn-arrow">Postuler et obtenir mon score</a>
+      </div>
+      <div class="split-body" style="background:#111;display:flex;align-items:center;justify-content:center;padding:clamp(32px,4vw,60px);">
+        <div class="csw reveal">
+          <div class="csw-circle">
+            <svg viewBox="0 0 120 120" width="160" height="160">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="#1e1e1e" stroke-width="6"/>
+              <circle cx="60" cy="60" r="52" fill="none" stroke="#c9a96e" stroke-width="6"
+                stroke-dasharray="326.7" stroke-dashoffset="71.9"
+                stroke-linecap="round" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="csw-inner">
+              <span class="csw-num">78</span>
+              <span class="csw-sub">Score</span>
+            </div>
+          </div>
+          <div class="csw-levels">
+            <div class="csw-level"><span class="csw-level-range">85–100</span><span class="csw-level-name">Elite</span></div>
+            <div class="csw-level csw-current"><span class="csw-level-range">70–84</span><span class="csw-level-name">Performer</span></div>
+            <div class="csw-level"><span class="csw-level-range">40–69</span><span class="csw-level-name">Active</span></div>
+            <div class="csw-level"><span class="csw-level-range">0–39</span><span class="csw-level-name">Onboarding</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── SCIENCE ─── -->
-  <section id="science" class="section section-dark">
+  <section id="science" class="section section-alt">
     <div class="reveal">
       <span class="label">La science</span>
       <h2 class="section-title">La santé comme <em>avantage compétitif</em></h2>
-      <p class="section-desc">En partenariat avec Lucis.health, No Limit Academy propose l'analyse préventive la plus complète du marché, intégrée directement à votre protocole de coaching.</p>
+      <p class="section-desc">En partenariat avec Lucis.health et Zoï, No Limit Academy propose l'analyse préventive la plus complète du marché, intégrée directement à votre CORTEX Score.</p>
     </div>
     <div class="cards-3 reveal">
       <div class="card">
-        <div class="card-icon">01 / Biomarqueurs</div>
-        <h3>180+ marqueurs analysés</h3>
-        <p>Profils cardiométaboliques, hormonaux, inflammatoires, hépatiques, rénaux et micronutriments. La vision complète de votre biologie.</p>
+        <div class="card-icon">01 / Lucis</div>
+        <h3>180+ biomarqueurs</h3>
+        <p>Profils cardiométaboliques, hormonaux, inflammatoires, hépatiques, rénaux et micronutriments. La vision complète de votre biologie, importée automatiquement dans CORTEX.</p>
       </div>
       <div class="card">
         <div class="card-icon">02 / Oura Ring</div>
         <h3>Monitoring continu</h3>
-        <p>Oura Ring connectée à CORTEX. Sommeil, HRV, température corporelle, score de récupération — 24h/24, analysés avant chaque séance. Whoop disponible en option pour un tracking de charge temps réel.</p>
+        <p>Oura Ring connectée à CORTEX. Sommeil, HRV, température corporelle, score de récupération — 24h/24, analysés avant chaque séance. Whoop disponible en option pour un tracking de charge en temps réel.</p>
       </div>
       <div class="card">
-        <div class="card-icon">03 / Mental</div>
-        <h3>Performance sous pression</h3>
-        <p>Conditionnement mental de niveau olympique adapté à la réalité du comité de direction. Gestion de la fatigue décisionnelle, protocoles de focus, résilience.</p>
+        <div class="card-icon">03 / Zoï</div>
+        <h3>Diagnostic de précision</h3>
+        <p>Diagnostics Zoï intégrés à CORTEX. Performance sous pression, gestion de la fatigue décisionnelle et conditionnement mental de niveau olympique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DROPS ─── -->
+  <section id="drops" class="section section-dark">
+    <div class="reveal">
+      <span class="label">Drops d'expériences</span>
+      <h2 class="section-title">Limitées. Validées.<br><em>Méritées.</em></h2>
+      <p class="section-desc">5 drops saisonniers par an. Places limitées à 8–12 participants. Inscription ouverte 48h. Chaque expérience est validée par votre CORTEX Score — certaines ne s'ouvrent qu'aux membres Elite.</p>
+    </div>
+    <div class="exp-grid reveal">
+      <div class="exp-card">
+        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/3nHzLEyA0EUbwptegIjvpR/d00dffbc475fe36f129523a6e672b1e6/REGENERATION_MODULE__ICONIC_SPACES_375x563-min.jpg?fm=webp&fit=fill&w=800')"></div>
+        <div class="exp-card-body">
+          <div class="exp-tag">Hiver · Laponie · 8 places</div>
+          <div class="exp-title">Arctic Reset</div>
+          <div class="exp-desc">Tracking sur glace, aurores boréales, leadership en conditions extrêmes. CORTEX Score ≥ 70 requis.</div>
+          <div class="exp-price">Score requis : Performer+</div>
+        </div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/7xaVBLqmztmYQGrXBg0pqx/01d2a0130ad7a05585663d9600b437eb/CORE_ANCILLARIES_MODULE__GF_375x563-min.jpg?fm=webp&fit=fill&w=1000')"></div>
+        <div class="exp-card-body">
+          <div class="exp-tag">Printemps · Chamonix · 10 places</div>
+          <div class="exp-title">Summit Prep</div>
+          <div class="exp-desc">Altitude, effort physique, préparation mentale au sommet. Protocole biométrique renforcé.</div>
+          <div class="exp-price">Score requis : Performer+ (≥ 75)</div>
+        </div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/3SSkmL8U5YBGKCPkJoIdib/07d03a08278a1f3576dc52cdb2ed5e79/CORE_ANCILLARIES_MODULE__STUDIO_PILATES_375x563-min.jpg?fm=webp&fit=fill&w=600')"></div>
+        <div class="exp-card-body">
+          <div class="exp-tag">Été · Sardaigne · 12 places</div>
+          <div class="exp-title">Mediterranean Flow</div>
+          <div class="exp-desc">Récupération active, breathwork en mer, nutrition de précision. Le drop le plus accessible.</div>
+          <div class="exp-price">Score requis : Active+ (≥ 60)</div>
+        </div>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920')"></div>
+        <div class="exp-card-body">
+          <div class="exp-tag">Automne · Secret · Sur invitation</div>
+          <div class="exp-title">Le Sommet NLA</div>
+          <div class="exp-desc">Rassemblement annuel des membres Elite. Lieu révélé 48h avant. Réservé aux scores ≥ 85.</div>
+          <div class="exp-price">Score requis : Elite (≥ 85)</div>
+        </div>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:24px;font-size:13px;color:var(--text-light);font-weight:300;text-align:center;">
+      Drop 5 — Dark Season (Islande, Automne/Hiver, 8 places) ouvert aux membres Premium uniquement.
+    </p>
+  </section>
+
+  <!-- ─── VALIDATION BIOMÉTRIQUE ─── -->
+  <section class="section section-alt">
+    <div class="reveal">
+      <span class="label">Validation biométrique</span>
+      <h2 class="section-title">Chaque expérience,<br><em>validée par CORTEX.</em></h2>
+      <p class="section-desc">Avant chaque drop, CORTEX analyse vos biomarqueurs en temps réel et émet une recommandation de participation. Votre sécurité prime sur votre enthousiasme.</p>
+    </div>
+    <div class="valid-grid reveal">
+      <div class="valid-card">
+        <div class="valid-icon">✅</div>
+        <div class="valid-status green">Feu vert</div>
+        <h3>Participation recommandée</h3>
+        <p>Votre CORTEX Score atteint le seuil requis. Vos biomarqueurs sont dans les normes optimales. Vous pouvez vous inscrire et partir en confiance.</p>
+      </div>
+      <div class="valid-card">
+        <div class="valid-icon">⚠️</div>
+        <div class="valid-status amber">Conditionnel</div>
+        <h3>Préparation recommandée</h3>
+        <p>Votre Score est proche du seuil. CORTEX génère un protocole de préparation sur 7–14 jours pour optimiser vos biomarqueurs avant le départ.</p>
+      </div>
+      <div class="valid-card">
+        <div class="valid-icon">🛑</div>
+        <div class="valid-status red">Non recommandé</div>
+        <h3>Report conseillé</h3>
+        <p>Certains indicateurs sont hors normes. CORTEX recommande de reporter et d'activer un protocole de récupération. Un prochain drop sera mieux adapté.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MÉTHODE ─── -->
+  <section class="section section-dark" style="padding:0;">
+    <div class="split">
+      <div class="split-img">
+        <div class="split-img-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/64oMt8msJ0h1l75i0ejdfs/51022d60a8ac8c3915436d1ede080321/CORE_ANCILLARIES_MODULE__PT_375x563-min.jpg?fm=webp&fit=fill&w=1920')"></div>
+      </div>
+      <div class="split-body reveal">
+        <span class="label">La méthode</span>
+        <h2 class="section-title">IMPACT. FLOW.<br><em>VISION.</em></h2>
+        <p class="section-desc">La méthode de Dustin Arnold n'est pas un programme de coaching standard. C'est une philosophie d'entraînement minimaliste et globale, intégrée au protocole CORTEX, qui agit simultanément sur trois dimensions.</p>
+        <ul class="tier-list" style="margin-bottom:40px;">
+          <li><strong style="color:var(--gold)">IMPACT</strong> — Les fondations physiques. Mouvement juste, récupération active, discipline du corps.</li>
+          <li><strong style="color:var(--gold)">FLOW</strong> — La régulation mentale. Sophrologie, breathwork, gestion de la charge cognitive.</li>
+          <li><strong style="color:var(--gold)">VISION</strong> — L'architecture de vie. Neurofeedback, génomique, projection à long terme.</li>
+        </ul>
+        <p style="font-size:13px;color:var(--text-light);font-weight:300;margin-bottom:32px;">Ces trois dimensions sont intégrées dans votre CORTEX Score et suivies longitudinalement par vos coachs certifiés.</p>
+        <a href="mailto:apply@no-limit-academy.com" class="btn btn-ghost btn-arrow">Postuler</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIAL ─── -->
+  <section class="section section-alt">
+    <div class="testimonial reveal">
+      <blockquote>« CORTEX m'a donné ce qu'aucun coach n'avait jamais réussi à me donner : une vision objective de mon état. Le Score est devenu mon premier indicateur du matin, avant les KPIs de l'entreprise. »</blockquote>
+      <cite>Membre CORTEX Premium</cite>
+      <div class="testimonial-role">PDG, groupe technologique européen</div>
+    </div>
+  </section>
+
+  <!-- ─── STATS ─── -->
+  <section class="section section-dark" style="padding-top:0;padding-bottom:0;">
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-n">180+</div>
+        <div class="stat-l">Biomarqueurs Lucis</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">50</div>
+        <div class="stat-l">Membres par trimestre</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">5</div>
+        <div class="stat-l">Drops saisonniers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">24/7</div>
+        <div class="stat-l">Concierge IA Premium</div>
       </div>
     </div>
   </section>
@@ -175,91 +331,13 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ─── EXPÉRIENCES ─── -->
-  <section id="experiences" class="section section-alt">
-    <div class="reveal">
-      <span class="label">Expériences à la carte</span>
-      <h2 class="section-title">Au-delà du programme.<br><em>L'extraordinaire.</em></h2>
-      <p class="section-desc">Ces expériences sont optionnelles et disponibles pour tous les membres, quel que soit leur programme. Les membres VISION bénéficient d'un accès prioritaire et d'un tarif préférentiel.</p>
-    </div>
-    <div class="exp-grid reveal">
-      <div class="exp-card">
-        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/3nHzLEyA0EUbwptegIjvpR/d00dffbc475fe36f129523a6e672b1e6/REGENERATION_MODULE__ICONIC_SPACES_375x563-min.jpg?fm=webp&fit=fill&w=800')"></div>
-        <div class="exp-card-body">
-          <div class="exp-tag">7 jours · Laponie</div>
-          <div class="exp-title">Expédition Arctique</div>
-          <div class="exp-desc">Tracking sur glace, aurores boréales, leadership en conditions extrêmes. 12 participants max.</div>
-          <div class="exp-price">6 000 – 9 000 €</div>
-        </div>
-      </div>
-      <div class="exp-card">
-        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/7xaVBLqmztmYQGrXBg0pqx/01d2a0130ad7a05585663d9600b437eb/CORE_ANCILLARIES_MODULE__GF_375x563-min.jpg?fm=webp&fit=fill&w=1000')"></div>
-        <div class="exp-card-body">
-          <div class="exp-tag">5 jours · Domaine privé</div>
-          <div class="exp-title">Retraite Biohacking</div>
-          <div class="exp-desc">Cryothérapie, breathwork, diagnostics avancés. Le protocole d'optimisation le plus complet.</div>
-          <div class="exp-price">3 500 – 5 000 €</div>
-        </div>
-      </div>
-      <div class="exp-card">
-        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/3SSkmL8U5YBGKCPkJoIdib/07d03a08278a1f3576dc52cdb2ed5e79/CORE_ANCILLARIES_MODULE__STUDIO_PILATES_375x563-min.jpg?fm=webp&fit=fill&w=600')"></div>
-        <div class="exp-card-body">
-          <div class="exp-tag">5 jours · Alpes</div>
-          <div class="exp-title">Traversée Alpine</div>
-          <div class="exp-desc">Altitude, effort physique extrême, leadership en milieu hostile.</div>
-          <div class="exp-price">4 000 – 6 000 €</div>
-        </div>
-      </div>
-      <div class="exp-card">
-        <div class="exp-card-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920')"></div>
-        <div class="exp-card-body">
-          <div class="exp-tag">Annuel · Sur invitation</div>
-          <div class="exp-title">Le Sommet No Limit</div>
-          <div class="exp-desc">Rassemblement annuel des membres, coachs et athlètes. Lieu révélé 48h avant.</div>
-          <div class="exp-price">Sur invitation</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── TESTIMONIAL ─── -->
-  <section class="section section-dark">
-    <div class="testimonial reveal">
-      <blockquote>« FLOW a changé ma relation au stress. Le breathwork et la sophrologie ne sont pas du yoga d'entreprise — c'est de la haute performance mentale. Je suis plus calme et plus incisif qu'à 30 ans. »</blockquote>
-      <cite>Membre FLOW</cite>
-      <div class="testimonial-role">PDG, groupe technologique européen</div>
-    </div>
-  </section>
-
-  <!-- ─── STATS ─── -->
-  <section class="section section-alt" style="padding-top:0;padding-bottom:0;">
-    <div class="stats reveal">
-      <div class="stat">
-        <div class="stat-n">180+</div>
-        <div class="stat-l">Biomarqueurs analysés</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">50</div>
-        <div class="stat-l">Membres par trimestre</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">3</div>
-        <div class="stat-l">Niveaux de programme</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n">24/7</div>
-        <div class="stat-l">Monitoring CORTEX</div>
-      </div>
-    </div>
-  </section>
-
   <!-- ─── CTA ─── -->
   <div class="cta-band">
     <div class="cta-band-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920')"></div>
     <div class="cta-band-inner reveal">
       <span class="label">Candidature</span>
       <h2 class="section-title">50 places. Sur <em>candidature.</em></h2>
-      <p class="section-desc">Le processus est simple : un email avec votre profil et vos objectifs. Notre équipe répond sous 48h pour planifier un entretien avec les fondateurs.</p>
+      <p class="section-desc">Un email avec votre profil et vos objectifs. Notre équipe répond sous 48h pour planifier un entretien avec les fondateurs.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
         <a href="mailto:apply@no-limit-academy.com" class="btn btn-gold">Postuler maintenant</a>
         <a href="/" class="btn btn-outline">Retour à l'accueil</a>

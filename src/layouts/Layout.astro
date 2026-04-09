@@ -241,6 +241,35 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
 .founders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); max-width: 960px; margin: 56px auto 0; }
 .founder-expand-btn { display: none; color: var(--gold); font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; margin-top: 12px; background: none; border: none; padding: 0; }
 
+/* ─── CORTEX Score Widget ─── */
+.csw { display: flex; align-items: center; gap: 40px; font-family: var(--font-mono); flex-wrap: wrap; justify-content: center; }
+.csw-circle { position: relative; width: 160px; height: 160px; flex-shrink: 0; }
+.csw-circle svg { display: block; }
+.csw-inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.csw-num { font-family: var(--font-serif); font-size: 52px; font-weight: 500; color: var(--gold); line-height: 1; }
+.csw-sub { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: #666; margin-top: 4px; }
+.csw-levels { display: flex; flex-direction: column; gap: 2px; }
+.csw-level { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 10px 14px; border-left: 2px solid #1e1e1e; min-width: 180px; }
+.csw-level.csw-current { border-left-color: var(--gold); background: rgba(201,169,110,0.06); }
+.csw-level-name { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; }
+.csw-level.csw-current .csw-level-name { color: var(--gold); }
+.csw-level-range { font-size: 10px; color: #333; }
+.csw-level.csw-current .csw-level-range { color: #888; }
+
+/* ─── Validation biométrique ─── */
+.valid-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); margin-top: 56px; }
+.valid-card { background: var(--bg-card); padding: 40px 32px; }
+.valid-icon { font-size: 32px; margin-bottom: 16px; }
+.valid-status { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 16px; }
+.valid-status.green { color: #22c55e; }
+.valid-status.amber { color: #f59e0b; }
+.valid-status.red { color: #ef4444; }
+.valid-card h3 { font-family: var(--font-serif); font-size: clamp(18px,1.8vw,22px); font-weight: 500; margin-bottom: 12px; color: var(--text-heading); }
+.valid-card p { font-size: 14px; color: var(--text-body); line-height: 1.65; font-weight: 300; }
+
+/* ─── Tiers 2 colonnes ─── */
+.tiers-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); margin-top: 60px; max-width: 860px; margin-left: auto; margin-right: auto; }
+
 /* ─── Expériences ─── */
 .exp-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--border); margin-top: 56px; }
 .exp-card { position: relative; min-height: 420px; overflow: hidden; }
@@ -280,6 +309,8 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
   .exp-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   /* Grilles empilées mobile */
+  .valid-grid { grid-template-columns: 1fr; }
+  .tiers-2 { grid-template-columns: 1fr; max-width: 100%; }
   .steps-grid-top,
   .steps-grid-bottom { display: flex; flex-direction: column; max-width: 100%; gap: 1px; }
   .phases-grid { display: flex; flex-direction: column; }
