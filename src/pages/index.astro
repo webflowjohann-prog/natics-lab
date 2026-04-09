@@ -1,271 +1,330 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="CORTEX by No Limit Academy | L'intelligence santé de précision" description="Lucis mesure. Zoï diagnostique. NLA transforme. 137 biomarqueurs. 6 agents IA. Un score unique.">
+<Layout title="NATICS Lab | L'intelligence santé de précision" description="L'intelligence santé de précision. 137 biomarqueurs. 6 agents IA. Un score unique.">
 
-  <!-- ─── HERO ─── -->
-  <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline poster="/images/hero-poster.jpg">
-      <source src="/video/Video-Home.mp4" type="video/mp4">
-    </video>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="hero-label">CORTEX by No Limit Academy</span>
-      <h1 class="hero-title">Votre corps parle.<br><em>CORTEX</em> écoute.</h1>
-      <p class="hero-sub">L'intelligence santé de précision.<br>137 biomarqueurs. 6 agents IA. Un score unique.</p>
-      <a href="#concept" class="cta">Découvrir CORTEX</a>
-    </div>
-    <div class="hero-scroll">
-      <span>Explorer</span>
-      <div class="hero-scroll-line"></div>
-    </div>
-  </section>
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="/video/Video-Home.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Votre corps parle.<br><em>NATICS Lab</em> écoute.</h1>
+    <p class="hero-sub">L'intelligence santé de précision.<br>137 biomarqueurs. 6 agents IA. Un score unique.</p>
+    <a href="#concept" class="cta">Découvrir NATICS Lab</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Explorer</span>
+  </div>
+</section>
 
-  <!-- ─── CONCEPT ─── -->
-  <section class="concept reveal" id="concept">
-    <p>
-      Lucis mesure.<br>
-      Zoï diagnostique.<br>
-      No Limit Academy transforme.<br><br>
-      <em>CORTEX</em> est l'intelligence<br>qui connecte les trois.
-    </p>
-    <div class="sep sep-center"></div>
-  </section>
+<!-- ─── CONCEPT ─── -->
+<section class="concept reveal" id="concept">
+  <p>
+    Lucis mesure.<br>
+    Zoï diagnostique.<br>
+    NATICS Lab transforme.<br><br>
+    <em>NATICS Lab</em> est l'intelligence<br>qui connecte les trois.
+  </p>
+  <div class="sep sep-center"></div>
+</section>
 
-  <!-- ─── AGENTS ─── -->
-  <section class="section section-dark reveal">
+<!-- ─── AGENTS ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:1120px;margin:0 auto" id="agents">
+  <div class="reveal">
     <span class="label">Les agents</span>
     <h2 class="section-title">Six agents, une seule <em>mission</em></h2>
     <p class="section-desc">Chaque agent est un assistant IA spécialisé, entraîné par la méthode Dustin Arnold et nourri par 137 biomarqueurs.</p>
-    <div class="agents-grid">
-      <div class="agent-card">
-        <div class="agent-img"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&q=80&fit=crop" alt="FORGE" loading="lazy"></div>
-        <div class="agent-body">
-          <div class="agent-name">Forge</div>
-          <div class="agent-role">Entraînement</div>
-          <div class="agent-desc">Protocoles de force, endurance et récupération. Adapte chaque séance à votre HRV, votre cortisol et votre historique de charge.</div>
-        </div>
+  </div>
+  <div class="agents-grid reveal">
+    <div class="agent-card">
+      <div class="agent-img">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="FORGE" loading="lazy">
       </div>
-      <div class="agent-card">
-        <div class="agent-img"><img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600&q=80&fit=crop" alt="MORPHÉE" loading="lazy"></div>
-        <div class="agent-body">
-          <div class="agent-name">Morphée</div>
-          <div class="agent-role">Sommeil</div>
-          <div class="agent-desc">Analyse vos cycles, optimise votre routine du soir et prescrit les protocoles chronobiologiques adaptés à votre profil.</div>
-        </div>
-      </div>
-      <div class="agent-card">
-        <div class="agent-img"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80&fit=crop" alt="FUEL" loading="lazy"></div>
-        <div class="agent-body">
-          <div class="agent-name">Fuel</div>
-          <div class="agent-role">Nutrition &amp; suppléments</div>
-          <div class="agent-desc">Plans nutritionnels calibrés sur vos biomarqueurs. Suppléments pharmaceutical-grade. Interactions vérifiées via ANSM.</div>
-        </div>
-      </div>
-      <div class="agent-card">
-        <div class="agent-img"><img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=600&q=80&fit=crop" alt="ZÉNITH" loading="lazy"></div>
-        <div class="agent-body">
-          <div class="agent-name">Zénith</div>
-          <div class="agent-role">Mental &amp; stress</div>
-          <div class="agent-desc">Breathwork, méditation, cohérence cardiaque. Monitore votre HRV et ajuste les protocoles de gestion du stress en temps réel.</div>
-        </div>
-      </div>
-      <div class="agent-card">
-        <div class="agent-img"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80&fit=crop" alt="ATLAS" loading="lazy"></div>
-        <div class="agent-body">
-          <div class="agent-name">Atlas</div>
-          <div class="agent-role">Expériences</div>
-          <div class="agent-desc">Expéditions et retraites validées par vos biomarqueurs. Protocoles de préparation sur mesure. Drops saisonniers exclusifs.</div>
-        </div>
-      </div>
-      <div class="agent-card">
-        <div class="agent-img"><img src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?w=600&q=80&fit=crop" alt="ORACLE" loading="lazy"></div>
-        <div class="agent-body">
-          <div class="agent-name">Oracle</div>
-          <div class="agent-role">Intelligence</div>
-          <div class="agent-desc">Coordonne les cinq autres agents. Calcule votre CORTEX Score, génère vos rapports et anticipe les tendances de votre santé.</div>
-        </div>
+      <div class="agent-body">
+        <div class="agent-name">Forge</div>
+        <div class="agent-role">Entraînement</div>
+        <div class="agent-desc">Protocoles de force, endurance et récupération. Adapte chaque séance à votre HRV, votre cortisol et votre historique de charge.</div>
       </div>
     </div>
-  </section>
-
-  <!-- ─── MÉTHODE VIDEO ─── -->
-  <section class="section section-alt reveal" style="text-align:center;">
-    <span class="label">La méthode</span>
-    <h2 class="section-title">Impact. Flow. <em>Vision.</em></h2>
-    <div class="video-wrap">
-      <video id="dustin-video" muted playsinline>
-        <source src="/video/Video-Home.mp4" type="video/mp4">
-      </video>
-      <div class="video-play" id="video-play">
-        <div class="video-play-btn">
-          <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
-        </div>
+    <div class="agent-card">
+      <div class="agent-img">
+        <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&q=80" alt="MORPHÉE" loading="lazy">
+      </div>
+      <div class="agent-body">
+        <div class="agent-name">Morphée</div>
+        <div class="agent-role">Sommeil & récupération</div>
+        <div class="agent-desc">Analyse vos cycles, optimise votre routine du soir et prescrit les protocoles chronobiologiques adaptés à votre profil.</div>
       </div>
     </div>
-    <blockquote class="video-quote">La méthode qui agit simultanément sur les leviers physiques, mentaux et émotionnels.</blockquote>
-    <p class="video-attr">Dustin Arnold — Fondateur Natics, ancien champion de boxe</p>
-  </section>
-
-  <!-- ─── 3 ÉTAPES ─── -->
-  <section class="section section-dark reveal" style="text-align:center;">
-    <span class="label">Comment ça marche</span>
-    <h2 class="section-title">Trois <em>étapes</em></h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <div class="step-title">Importez vos analyses</div>
-        <div class="step-desc">Lucis, Zoï, ou photographiez vos résultats. CORTEX extrait et classifie 137 biomarqueurs automatiquement.</div>
+    <div class="agent-card">
+      <div class="agent-img">
+        <img src="https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=600&q=80" alt="FUEL" loading="lazy">
       </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <div class="step-title">Connectez votre wearable</div>
-        <div class="step-desc">Optionnel. Oura, Apple Watch, Garmin, Whoop ou tout autre device. CORTEX s'adapte à ce que vous portez déjà.</div>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <div class="step-title">CORTEX prescrit</div>
-        <div class="step-desc">Chaque matin. Chaque nuit. Chaque bilan. Six agents IA personnalisent vos recommandations en continu.</div>
+      <div class="agent-body">
+        <div class="agent-name">Fuel</div>
+        <div class="agent-role">Nutrition & suppléments</div>
+        <div class="agent-desc">Plans nutritionnels calibrés sur vos biomarqueurs. Suppléments pharmaceutical-grade. Interactions vérifiées via ANSM.</div>
       </div>
     </div>
-  </section>
-
-  <!-- ─── CORTEX SCORE ─── -->
-  <section class="section section-alt reveal" style="text-align:center;">
-    <span class="label">Le score</span>
-    <h2 class="section-title">Un chiffre. Chaque <em>matin.</em></h2>
-    <p class="section-desc" style="margin:12px auto 48px;">Votre CORTEX Score reflète l'état de votre santé globale. Mis à jour quotidiennement à partir de vos biomarqueurs, votre wearable et votre compliance.</p>
-    <div class="score-section">
-      <div class="score-ring-wrap">
-        <svg width="200" height="200" viewBox="0 0 200 200">
-          <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="5"/>
-          <circle cx="100" cy="100" r="88" fill="none" stroke="var(--gold)" stroke-width="5"
-            stroke-dasharray="553" stroke-dashoffset="122" stroke-linecap="round"
-            style="filter:drop-shadow(0 0 8px rgba(201,169,110,0.3))"/>
-        </svg>
-        <div class="score-center">
-          <div class="num">78</div>
-          <div class="lbl">Performer</div>
-        </div>
+    <div class="agent-card">
+      <div class="agent-img">
+        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=600&q=80" alt="ZÉNITH" loading="lazy">
       </div>
-      <div class="score-bars">
-        <div class="score-bar"><div class="score-bar-header"><span class="score-bar-name">Sommeil</span><span class="score-bar-val">82</span></div><div class="score-bar-track"><div class="score-bar-fill" style="width:82%"></div></div></div>
-        <div class="score-bar"><div class="score-bar-header"><span class="score-bar-name">Récupération</span><span class="score-bar-val">71</span></div><div class="score-bar-track"><div class="score-bar-fill" style="width:71%"></div></div></div>
-        <div class="score-bar"><div class="score-bar-header"><span class="score-bar-name">Activité</span><span class="score-bar-val">85</span></div><div class="score-bar-track"><div class="score-bar-fill" style="width:85%"></div></div></div>
-        <div class="score-bar"><div class="score-bar-header"><span class="score-bar-name">Biomarqueurs</span><span class="score-bar-val">73</span></div><div class="score-bar-track"><div class="score-bar-fill" style="width:73%"></div></div></div>
-        <div class="score-bar"><div class="score-bar-header"><span class="score-bar-name">Compliance</span><span class="score-bar-val">79</span></div><div class="score-bar-track"><div class="score-bar-fill" style="width:79%"></div></div></div>
+      <div class="agent-body">
+        <div class="agent-name">Zénith</div>
+        <div class="agent-role">Mental & performance cognitive</div>
+        <div class="agent-desc">Breathwork, méditation, cohérence cardiaque. Monitore votre HRV et ajuste les protocoles de gestion du stress en temps réel.</div>
       </div>
     </div>
-  </section>
-
-  <!-- ─── PARTENAIRES ─── -->
-  <section class="section section-dark reveal" style="text-align:center;">
-    <span class="label">Partenaires</span>
-    <h2 class="section-title">Sélectionnés pour leur <em>excellence</em></h2>
-    <div class="partners-logos">
-      <span>Thorne</span><span>Momentous</span><span>Eight Sleep</span><span>SHA Wellness</span><span>Therabody</span><span>Explora</span><span>HeartMath</span><span>Lanserhof</span>
-    </div>
-  </section>
-
-  <!-- ─── EXPÉRIENCES ─── -->
-  <section class="section section-alt reveal">
-    <span class="label">Expériences</span>
-    <h2 class="section-title">Validées par vos <em>biomarqueurs</em></h2>
-    <p class="section-desc">Des expériences transformationnelles accessibles uniquement aux membres dont les données biologiques confirment la capacité physique et mentale.</p>
-    <div class="exp-hero">
-      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80&fit=crop" alt="Expériences NLA" loading="lazy">
-      <div class="exp-hero-overlay"></div>
-      <div class="exp-hero-content">
-        <div class="exp-drops">
-          <div class="exp-drop"><strong>Janvier</strong> — Arctic Reset, Laponie</div>
-          <div class="exp-drop"><strong>Juin</strong> — Mediterranean Flow, Sardaigne</div>
-          <div class="exp-drop"><strong>Septembre</strong> — Le Sommet NLA, Confidentiel</div>
-        </div>
+    <div class="agent-card">
+      <div class="agent-img">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="ATLAS" loading="lazy">
+      </div>
+      <div class="agent-body">
+        <div class="agent-name">Atlas</div>
+        <div class="agent-role">Expériences & expéditions</div>
+        <div class="agent-desc">Expéditions et retraites validées par vos biomarqueurs. Protocoles de préparation sur mesure. Drops saisonniers exclusifs.</div>
       </div>
     </div>
-  </section>
-
-  <!-- ─── FONDATEURS ─── -->
-  <section class="section section-dark reveal" style="text-align:center;">
-    <span class="label">Fondateurs</span>
-    <h2 class="section-title">Deux visions, une <em>ambition</em></h2>
-    <div class="founders-grid" style="text-align:left;">
-      <div class="card" style="text-align:center;">
-        <div class="card-icon">Architecte de CORTEX</div>
-        <h3>Johann Langenberg</h3>
-        <p>Ancien numéro 1 mondial et quintuple champion d'Europe. 25 ans d'expertise en création digitale, production vidéo cinématique et développement d'outils sur mesure propulsés par l'IA.</p>
+    <div class="agent-card">
+      <div class="agent-img">
+        <img src="https://images.unsplash.com/photo-1502920514313-52581002a659?w=600&q=80" alt="ORACLE" loading="lazy">
       </div>
-      <div class="card" style="text-align:center;">
-        <div class="card-icon">Créateur de la méthode</div>
-        <h3>Dustin Arnold</h3>
-        <p>Ancien champion de boxe. Fondateur de NATICS à Bois-Guillaume. Créateur de la méthode IMPACT / FLOW / VISION, une approche qui agit simultanément sur les leviers physiques, mentaux et émotionnels.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── PRICING ─── -->
-  <section class="section section-alt reveal" style="text-align:center;">
-    <span class="label">Investissement</span>
-    <h2 class="section-title">Votre <em>santé,</em> votre capital</h2>
-    <p class="section-desc" style="margin:0 auto 0;">Financement possible par l'entreprise — QVCT, charge déductible, exonération sport.</p>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <div class="pricing-label">CORTEX Essential</div>
-        <div class="pricing-price">149 — 249 €</div>
-        <div class="pricing-period">par mois</div>
-        <ul class="pricing-features">
-          <li>Plateforme CORTEX complète</li>
-          <li>6 agents IA spécialisés</li>
-          <li>CORTEX Score quotidien</li>
-          <li>137 biomarqueurs analysés</li>
-          <li>Wearable compatible inclus</li>
-          <li>Catalogue expériences</li>
-        </ul>
-        <a href="/membre#essential" class="cta cta-ghost" style="width:100%;display:block;">Commencer</a>
-      </div>
-      <div class="pricing-card featured">
-        <div class="pricing-badge">Recommandé</div>
-        <div class="pricing-label">CORTEX Premium</div>
-        <div class="pricing-price">490 — 790 €</div>
-        <div class="pricing-period">par mois</div>
-        <ul class="pricing-features">
-          <li>Tout Essential inclus</li>
-          <li>Validation biométrique expériences</li>
-          <li>Drops prioritaires</li>
-          <li>Concierge IA 24/7</li>
-          <li>Rapports mensuels détaillés</li>
-          <li>Cercle intérieur NLA</li>
-        </ul>
-        <a href="/membre#premium" class="cta" style="width:100%;display:block;">Commencer</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── CTA FINAL ─── -->
-  <div class="cta-band">
-    <div class="cta-band-bg" style="background-image:url('https://images.ctfassets.net/drib7o8rcbyf/1bWwZYCr12yWUXuz8WkTc8/48e6bc6818aa55c46721ea5b6cd110ac/Red_Lady_Portrait.jpg?fm=webp&fit=fill&w=1920')"></div>
-    <div class="cta-band-inner reveal">
-      <span class="label">Accès limité</span>
-      <h2 class="section-title">50 membres par trimestre.<br>Pas un de <em>plus.</em></h2>
-      <p class="section-desc">CORTEX n'est pas une application de masse. C'est un engagement entre votre biologie et l'intelligence qui l'analyse.</p>
-      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-        <a href="mailto:apply@no-limit-academy.com" class="btn btn-gold btn-arrow">Postuler</a>
-        <a href="/membre" class="btn btn-outline">Voir les offres</a>
+      <div class="agent-body">
+        <div class="agent-name">Oracle</div>
+        <div class="agent-role">Intelligence & analyse</div>
+        <div class="agent-desc">Coordonne les cinq autres agents. Calcule votre NATICS Lab Score, génère vos rapports et anticipe les tendances de votre santé.</div>
       </div>
     </div>
   </div>
+</section>
 
-</Layout>
+<!-- ─── VIDEO LA MÉTHODE ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto;text-align:center" id="methode" class="reveal">
+  <span class="label">La méthode</span>
+  <h2 class="section-title">Impact. Flow. <em>Vision.</em></h2>
+  <div class="video-wrap">
+    <video id="dustin-video" muted playsinline>
+      <source src="/video/Video-Home.mp4" type="video/mp4">
+    </video>
+    <div class="video-play" id="video-play">
+      <div class="video-play-btn">
+        <svg viewBox="0 0 24 24"><polygon points="8,5 20,12 8,19"/></svg>
+      </div>
+    </div>
+  </div>
+  <blockquote class="video-quote">
+    La méthode qui agit simultanément sur les leviers physiques, mentaux et émotionnels.
+  </blockquote>
+  <p class="video-attr">Dustin Arnold — Fondateur NATICS, ancien champion de boxe</p>
+</section>
+
+<!-- ─── BATTLE ROPES VISUAL ─── -->
+<div style="position:relative;height:35vh;min-height:260px;overflow:hidden">
+  <img src="https://images.unsplash.com/photo-1604480132736-44c188fe4d20?w=1920&q=80" alt="Intensité" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.05)" loading="lazy">
+  <div style="position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(13,13,13,0.95))"></div>
+  <div style="position:absolute;bottom:32px;left:0;right:0;text-align:center">
+    <div style="font-family:var(--font-serif);font-size:18px;color:var(--t3);font-weight:300;font-style:italic">Méthode Impact. Flow. Vision.</div>
+  </div>
+</div>
+
+<!-- ─── 3 ÉTAPES ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto" class="reveal">
+  <div style="text-align:center">
+    <span class="label">Comment ça marche</span>
+    <h2 class="section-title">Trois <em>étapes</em></h2>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-title">Importez vos analyses</div>
+      <div class="step-desc">Lucis, Zoï, ou photographiez vos résultats. NATICS Lab extrait et classifie 137 biomarqueurs automatiquement.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-title">Connectez votre wearable</div>
+      <div class="step-desc">Optionnel. Oura, Apple Watch, Garmin, Whoop ou tout autre device. NATICS Lab s'adapte à ce que vous portez déjà.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-title">NATICS Lab prescrit</div>
+      <div class="step-desc">Chaque matin. Chaque nuit. Chaque bilan. Six agents IA personnalisent vos recommandations en continu.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BIOMARKERS VISUAL ─── -->
+<div style="position:relative;height:40vh;min-height:280px;overflow:hidden">
+  <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f3?w=1920&q=80" alt="Analyses" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%)" loading="lazy">
+  <div style="position:absolute;inset:0;background:linear-gradient(transparent 20%,rgba(13,13,13,0.95))"></div>
+  <div style="position:absolute;bottom:40px;left:0;right:0;text-align:center;padding:0 24px">
+    <div style="font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--t4);margin-bottom:12px">Précision clinique</div>
+    <div style="font-family:var(--font-serif);font-size:clamp(24px,4vw,36px);color:var(--t1);font-weight:400">137 biomarqueurs. Chaque <em style="font-style:italic;color:var(--gold)">détail</em> compte.</div>
+    <div style="font-size:14px;color:var(--t3);font-weight:300;margin-top:12px;max-width:480px;margin-left:auto;margin-right:auto">Sources françaises ANSM, HAS, ANSES. Interactions médicamenteuses vérifiées via la BDPM. Aucun compromis.</div>
+  </div>
+</div>
+
+<!-- ─── NATICS LAB SCORE ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto" id="score" class="reveal">
+  <div style="text-align:center;margin-bottom:48px">
+    <span class="label">Le score</span>
+    <h2 class="section-title">Un chiffre. Chaque <em>matin</em>.</h2>
+    <p class="section-desc" style="margin:12px auto 0">Votre NATICS Lab Score reflète l'état de votre santé globale. Mis à jour quotidiennement à partir de vos biomarqueurs, votre wearable et votre compliance.</p>
+  </div>
+  <div class="score-section">
+    <div class="score-ring-wrap">
+      <svg width="200" height="200" viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="88" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="5"/>
+        <circle cx="100" cy="100" r="88" fill="none" stroke="var(--gold)" stroke-width="5"
+          stroke-dasharray="553" stroke-dashoffset="122" stroke-linecap="round"
+          style="filter:drop-shadow(0 0 8px rgba(201,169,110,0.3));transition:stroke-dashoffset 2s ease"/>
+      </svg>
+      <div class="score-center">
+        <div class="num">78</div>
+        <div class="lbl">PERFORMER</div>
+      </div>
+    </div>
+    <div class="score-bars">
+      <div class="score-bar">
+        <div class="score-bar-header"><span class="score-bar-name">Sommeil</span><span class="score-bar-val">82</span></div>
+        <div class="score-bar-track"><div class="score-bar-fill" style="width:82%"></div></div>
+      </div>
+      <div class="score-bar">
+        <div class="score-bar-header"><span class="score-bar-name">Récupération</span><span class="score-bar-val">71</span></div>
+        <div class="score-bar-track"><div class="score-bar-fill" style="width:71%"></div></div>
+      </div>
+      <div class="score-bar">
+        <div class="score-bar-header"><span class="score-bar-name">Activité</span><span class="score-bar-val">85</span></div>
+        <div class="score-bar-track"><div class="score-bar-fill" style="width:85%"></div></div>
+      </div>
+      <div class="score-bar">
+        <div class="score-bar-header"><span class="score-bar-name">Biomarqueurs</span><span class="score-bar-val">73</span></div>
+        <div class="score-bar-track"><div class="score-bar-fill" style="width:73%"></div></div>
+      </div>
+      <div class="score-bar">
+        <div class="score-bar-header"><span class="score-bar-name">Compliance</span><span class="score-bar-val">79</span></div>
+        <div class="score-bar-track"><div class="score-bar-fill" style="width:79%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PARTENAIRES ─── -->
+<section style="padding:clamp(60px,8vw,100px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto;text-align:center" class="reveal">
+  <span class="label">Partenaires</span>
+  <h2 class="section-title">Sélectionnés pour leur <em>excellence</em></h2>
+  <div class="partners-logos">
+    <span>Thorne</span><span>Momentous</span><span>Eight Sleep</span><span>SHA Wellness</span>
+    <span>Therabody</span><span>Explora</span><span>HeartMath</span><span>Lanserhof</span>
+  </div>
+</section>
+
+<!-- ─── ATHLETE VISUAL ─── -->
+<div style="position:relative;height:50vh;min-height:340px;overflow:hidden">
+  <img src="https://images.unsplash.com/photo-1461897104016-0b3b00cc81ee?w=1920&q=80" alt="Performance" style="width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.1)" loading="lazy">
+  <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(13,13,13,0.8) 0%,rgba(13,13,13,0.3) 50%,rgba(13,13,13,0.8) 100%)"></div>
+  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 24px">
+    <div style="font-family:var(--font-serif);font-size:clamp(28px,5vw,48px);color:var(--t1);font-weight:400;line-height:1.2">
+      La performance n'est pas<br>un <em style="font-style:italic;color:var(--gold)">objectif</em>.<br>C'est un <em style="font-style:italic;color:var(--gold)">état</em>.
+    </div>
+  </div>
+</div>
+
+<!-- ─── EXPÉRIENCES ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto" class="reveal">
+  <span class="label">Expériences</span>
+  <h2 class="section-title">Validées par vos <em>biomarqueurs</em></h2>
+  <p class="section-desc">Des expériences transformationnelles accessibles uniquement aux membres dont les données biologiques confirment la capacité physique et mentale.</p>
+  <div class="exp-hero">
+    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80" alt="Expériences" loading="lazy">
+    <div class="exp-hero-overlay"></div>
+    <div class="exp-hero-content">
+      <div class="exp-drops">
+        <div class="exp-drop"><strong>Janvier</strong> — Arctic Reset, Laponie</div>
+        <div class="exp-drop"><strong>Juin</strong> — Mediterranean Flow, Sardaigne</div>
+        <div class="exp-drop"><strong>Septembre</strong> — Le Sommet NATICS Lab, Confidentiel</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FONDATEURS ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto;text-align:center" class="reveal">
+  <span class="label">Fondateurs</span>
+  <h2 class="section-title">Deux visions, une <em>ambition</em></h2>
+  <div class="founders-grid">
+    <div class="card" style="text-align:center">
+      <div style="width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#262626,#1a1a1a);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border:1px solid var(--border)">
+        <span style="font-family:var(--font-serif);font-size:28px;color:var(--gold);font-weight:300">JL</span>
+      </div>
+      <h3>Johann Langenberg</h3>
+      <div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-family:var(--font-sans);font-weight:500">Architecte de NATICS Lab</div>
+      <p>Ancien numéro 1 mondial et quintuple champion d'Europe. 25 ans d'expertise en création digitale, production vidéo cinématique et développement d'outils sur mesure propulsés par l'IA.</p>
+    </div>
+    <div class="card" style="text-align:center">
+      <div style="width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#262626,#1a1a1a);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;border:1px solid var(--border)">
+        <span style="font-family:var(--font-serif);font-size:28px;color:var(--gold);font-weight:300">DA</span>
+      </div>
+      <h3>Dustin Arnold</h3>
+      <div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-family:var(--font-sans);font-weight:500">Créateur de la méthode</div>
+      <p>Ancien champion de boxe. Fondateur de NATICS à Bois-Guillaume. Créateur de la méthode IMPACT / FLOW / VISION, une approche qui agit simultanément sur les leviers physiques, mentaux et émotionnels.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section style="padding:clamp(80px,12vw,140px) clamp(24px,5vw,80px);max-width:960px;margin:0 auto;text-align:center" id="abonnements" class="reveal">
+  <span class="label">Investissement</span>
+  <h2 class="section-title">Votre <em>santé</em>, votre capital</h2>
+  <p class="section-desc" style="margin:0 auto 0">Financement possible par votre entreprise — QVCT, charge déductible, exonération sport.</p>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="pricing-label">NATICS Lab Essential</div>
+      <div class="pricing-price">149 — 249 €</div>
+      <div class="pricing-period">par mois</div>
+      <ul class="pricing-features">
+        <li>Plateforme NATICS Lab complète</li>
+        <li>6 agents IA spécialisés</li>
+        <li>NATICS Lab Score quotidien</li>
+        <li>137 biomarqueurs analysés</li>
+        <li>Wearable optionnel compatible</li>
+        <li>Catalogue expériences</li>
+      </ul>
+      <a href="mailto:apply@natics-lab.com" class="cta cta-ghost" style="width:100%;display:block">Commencer</a>
+    </div>
+    <div class="pricing-card featured">
+      <div class="pricing-badge">Recommandé</div>
+      <div class="pricing-label">NATICS Lab Premium</div>
+      <div class="pricing-price">490 — 790 €</div>
+      <div class="pricing-period">par mois</div>
+      <ul class="pricing-features">
+        <li>Tout Essential inclus</li>
+        <li>Validation biométrique expériences</li>
+        <li>Drops prioritaires</li>
+        <li>Concierge IA 24/7</li>
+        <li>Rapports mensuels détaillés</li>
+        <li>Cercle intérieur NATICS Lab</li>
+      </ul>
+      <a href="mailto:apply@natics-lab.com" class="cta" style="width:100%;display:block">Commencer</a>
+    </div>
+  </div>
+</section>
 
 <script>
-const playBtn = document.getElementById('video-play');
-const videoEl = document.getElementById('dustin-video') as HTMLVideoElement | null;
-if (playBtn && videoEl) {
-  playBtn.addEventListener('click', () => {
-    videoEl.muted = false;
-    videoEl.play();
-    playBtn.style.display = 'none';
-    videoEl.addEventListener('ended', () => { playBtn.style.display = 'flex'; });
+const vp = document.getElementById('video-play');
+if (vp) {
+  vp.addEventListener('click', () => {
+    const v = document.getElementById('dustin-video');
+    if (!v) return;
+    v.muted = false;
+    v.play();
+    vp.style.display = 'none';
+    v.addEventListener('ended', () => { vp.style.display = 'flex'; });
   });
 }
 </script>
+
+</Layout>

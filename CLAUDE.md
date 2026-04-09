@@ -1,8 +1,8 @@
-# CORTEX by No Limit Academy — Instructions Claude Code
+# NATICS Lab — Instructions Claude Code
 
 ## Contexte
 
-CORTEX est la plateforme d'intelligence santé de précision de No Limit Academy. Ecosystème SaaS complet avec 6 agents IA spécialisés, 137 biomarqueurs, intégration wearables via Terra API, boutique partenaires avec Stripe Connect, et back office admin.
+NATICS Lab est la plateforme d'intelligence santé de précision. Ecosystème SaaS complet avec 6 agents IA spécialisés, 137 biomarqueurs, intégration wearables via Terra API, boutique partenaires avec Stripe Connect, et back office admin.
 
 Fondateurs : Johann Langenberg (ancien n°1 mondial, 5x champion d'Europe, expert tech/IA/vidéo) et Dustin Arnold (ancien champion de boxe, fondateur NATICS Bois-Guillaume, méthode IMPACT/FLOW/VISION).
 
@@ -32,7 +32,7 @@ Toujours consulter ces pages Notion pour le contexte détaillé :
 - **Workflows** : n8n (ikonik-ac.app.n8n.cloud)
 - **Wearables** : Terra API (500+ devices)
 - **IA** : Claude API (Anthropic) — moteur des 6 agents
-- **Repo** : GitHub webflowjohann-prog/no-limit-academy
+- **Repo** : GitHub webflowjohann-prog/natics-lab
 
 ## Direction artistique — CRITIQUE
 
@@ -44,7 +44,7 @@ Toujours consulter ces pages Notion pour le contexte détaillé :
 #A6A6A6 — texte tertiaire
 #D9D9D9 — séparateurs
 #FFFFFF — texte principal
-#c9a96e — or NLA, SEULE couleur d'accent
+#c9a96e — or NATICS Lab, SEULE couleur d'accent
 #b8963e — or hover
 ```
 
@@ -72,7 +72,7 @@ Toujours consulter ces pages Notion pour le contexte détaillé :
 - ATLAS : sommet montagne dans les nuages
 - ORACLE : gouttes eau macro surface noire
 
-## Les 6 agents CORTEX
+## Les 6 agents NATICS Lab
 
 | Agent | Rôle | Données sources |
 |---|---|---|
@@ -80,7 +80,7 @@ Toujours consulter ces pages Notion pour le contexte détaillé :
 | MORPHÉE | Sommeil, cycles, chronobiologie | Sleep score, deep/REM, HRV nuit, temp, SpO2 |
 | FUEL | Nutrition, suppléments, hydratation | Biomarqueurs, carences, médications (ANSM) |
 | ZÉNITH | Mental, stress, breathwork, méditation | HRV, stress score, journal humeur |
-| ATLAS | Expériences, expéditions, préparation | CORTEX Score, validation biométrique |
+| ATLAS | Expériences, expéditions, préparation | NATICS Lab Score, validation biométrique |
 | ORACLE | Intelligence, score, rapports, coordination | Toutes les données, calcul score |
 
 ## Supabase — 21 tables (migrations appliquées)
@@ -114,10 +114,10 @@ Hiérarchie CRITIQUE : sources françaises TOUJOURS en premier.
 
 ## Phase 1 MVP (priorité)
 
-1. Landing page CORTEX (FAIT)
+1. Landing page NATICS Lab (FAIT)
 2. Auth Supabase (inscription, login, magic link)
 3. Onboarding questionnaire 65 questions
-4. Dashboard Home avec CORTEX Score
+4. Dashboard Home avec NATICS Lab Score
 5. Agent FUEL (suppléments + boutique Stripe)
 6. Agent MORPHÉE (analyse sommeil)
 7. Scanner OCR biomarqueurs
@@ -138,5 +138,5 @@ Hiérarchie CRITIQUE : sources françaises TOUJOURS en premier.
 
 - RGPD : consentement explicite, hébergement EU, DPO à nommer
 - HDS : migration OVHcloud/Scaleway en Phase 2
-- CORTEX = outil bien-être, PAS dispositif médical (UE 2017/745)
+- NATICS Lab = outil bien-être, PAS dispositif médical (UE 2017/745)
 - Disclaimer obligatoire dans l'app

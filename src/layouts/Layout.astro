@@ -4,8 +4,8 @@ export interface Props {
   description?: string;
 }
 const {
-  title = "No Limit Academy | L'académie d'élite pour dirigeants",
-  description = "No Limit Academy — coaching d'élite, science préventive et expériences transformationnelles pour dirigeants visionnaires.",
+  title = "NATICS Lab | L'intelligence santé de précision",
+  description = "NATICS Lab — l'intelligence santé de précision. 137 biomarqueurs. 6 agents IA. Un score unique.",
 } = Astro.props;
 const currentPath = Astro.url.pathname;
 ---
@@ -18,7 +18,7 @@ const currentPath = Astro.url.pathname;
 <meta name="description" content={description}>
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="No Limit Academy">
+<meta property="og:site_name" content="NATICS Lab">
 <meta property="og:title" content={title}>
 <meta property="og:description" content={description}>
 <meta property="og:image" content="https://no-limit-academy.netlify.app/images/og-nla.png">
@@ -432,13 +432,13 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
 <body>
 
 <nav class="nav">
-  <a href="/" class="nav-logo">No Limit <span>Academy</span></a>
+  <a href="/" class="nav-logo">NATICS <span>Lab</span></a>
   <div class="nav-links">
-    <a href="/membre" class={currentPath.startsWith('/membre') ? 'active' : ''}>Membres</a>
-    <a href="/coach" class={currentPath.startsWith('/coach') ? 'active' : ''}>Coachs</a>
-    <a href="/investir" class={currentPath.startsWith('/investir') ? 'active' : ''}>Investir</a>
-    <a href="/partenaire" class={currentPath.startsWith('/partenaire') ? 'active' : ''}>Partenaire</a>
-    <a href="mailto:apply@no-limit-academy.com" class="nav-cta">Postuler</a>
+    <a href="/#agents">Les agents</a>
+    <a href="/#methode">La méthode</a>
+    <a href="/#score">Le score</a>
+    <a href="/#abonnements">Abonnements</a>
+    <a href="mailto:apply@natics-lab.com" class="nav-cta">Rejoindre</a>
   </div>
   <div class="nav-hamburger" id="nav-ham">
     <span></span>
@@ -448,11 +448,11 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
 </nav>
 
 <div class="nav-mobile" id="nav-mobile">
-  <a href="/membre">Membres</a>
-  <a href="/coach">Coachs</a>
-  <a href="/investir">Investir</a>
-  <a href="/partenaire">Partenaire</a>
-  <a href="mailto:apply@no-limit-academy.com">Postuler</a>
+  <a href="/#agents">Les agents</a>
+  <a href="/#methode">La méthode</a>
+  <a href="/#score">Le score</a>
+  <a href="/#abonnements">Abonnements</a>
+  <a href="mailto:apply@natics-lab.com">Rejoindre</a>
 </div>
 
 <slot />
@@ -460,25 +460,25 @@ h1 em, h2 em, h3 em, .hero-title em, .section-title em { font-family: var(--font
 <footer class="footer">
   <div class="footer-grid">
     <div>
-      <div class="footer-brand">No Limit <span>Academy</span></div>
+      <div class="footer-brand">NATICS <span>Lab</span></div>
       <p class="footer-tagline">L'intelligence santé de précision.</p>
     </div>
     <div class="footer-col">
-      <p class="footer-col-title">L'académie</p>
-      <a href="/membre">Devenir membre</a>
-      <a href="/coach">Rejoindre en tant que coach</a>
+      <p class="footer-col-title">La plateforme</p>
+      <a href="/#agents">Les agents</a>
+      <a href="/#methode">La méthode</a>
+      <a href="/#score">Le score</a>
     </div>
     <div class="footer-col">
-      <p class="footer-col-title">Rejoindre</p>
-      <a href="mailto:apply@no-limit-academy.com">apply@no-limit-academy.com</a>
-      <a href="/investir">Relations investisseurs</a>
-      <a href="/partenaire">Partenariats</a>
+      <p class="footer-col-title">Contact</p>
+      <a href="mailto:apply@natics-lab.com">apply@natics-lab.com</a>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 No Limit Academy. Un projet IKONIK Artisan Créatif.</span>
+    <span>&copy; 2026 NATICS Lab.</span>
     <span>Mentions légales &middot; Confidentialité</span>
   </div>
+  <p class="footer-disclaimer">NATICS Lab est un outil d'information et de bien-être. Il ne remplace pas un avis médical professionnel. Consultez votre médecin pour toute question de santé. Données hébergées en France (Supabase EU, Paris).</p>
 </footer>
 
 <script>
